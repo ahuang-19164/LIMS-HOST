@@ -1,0 +1,27 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <BaseOutputPath>C:\YichenHostDll</BaseOutputPath>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="DotLiquid" Version="2.2.677" />
+    <PackageReference Include="Essensoft.Paylink.WeChatPay" Version="4.0.12" />
+    <PackageReference Include="SqlSugar.IOC" Version="1.9.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Yichen.Comm.IRepository\Yichen.Comm.IRepository.csproj" />
+    <ProjectReference Include="..\Yichen.Comm.IServices\Yichen.Comm.IServices.csproj" />
+    <ProjectReference Include="..\Yichen.Comm.Repository\Yichen.Comm.Repository.csproj" />
+    <ProjectReference Include="..\Yichen.Net.Auth\Yichen.Net.Auth.csproj" />
+    <ProjectReference Include="..\Yichen.Net.CodeGenerator\Yichen.Net.CodeGenerator.csproj" />
+    <ProjectReference Include="..\Yichen.Net.Configuration\Yichen.Net.Configuration.csproj" />
+    <ProjectReference Include="..\Yichen.Net.Core\Yichen.Net.Core.csproj" />
+    <ProjectReference Include="..\Yichen.Net.IRepository\Yichen.Net.IRepository.csproj" />
+    <ProjectReference Include="..\Yichen.Net.Model\Yichen.Net.Model.csproj" />
+    <ProjectReference Include="..\Yichen.Net.Utility\Yichen.Net.Utility.csproj" />
+  </ItemGroup>
+
+</Project>

@@ -1,0 +1,34 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <BaseOutputPath>C:\YichenHostDll</BaseOutputPath>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Nito.AsyncEx" Version="5.1.2" />
+    <PackageReference Include="SqlSugarCore" Version="5.1.3.35" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Yichen.Comm.Model\Yichen.Comm.Model.csproj" />
+    <ProjectReference Include="..\Yichen.Comm.Repository\Yichen.Comm.Repository.csproj" />
+    <ProjectReference Include="..\Yichen.Comm.Services\Yichen.Comm.Services.csproj" />
+    <ProjectReference Include="..\Yichen.Net.Auth\Yichen.Net.Auth.csproj" />
+    <ProjectReference Include="..\Yichen.Net.Caching\Yichen.Net.Caching.csproj" />
+    <ProjectReference Include="..\Yichen.Net.Data\Yichen.Net.Data.csproj" />
+    <ProjectReference Include="..\Yichen.Net.DLLs\Yichen.Net.DLLs.csproj" />
+    <ProjectReference Include="..\Yichen.Net.Extensions\Yichen.Net.Extensions.csproj" />
+    <ProjectReference Include="..\Yichen.Net.Json\Yichen.Net.Json.csproj" />
+    <ProjectReference Include="..\Yichen.Net.Table\Yichen.Net.Table.csproj" />
+    <ProjectReference Include="..\Yichen.Stores.IRepository\Yichen.Stores.IRepository.csproj" />
+    <ProjectReference Include="..\Yichen.Stores.IServices\Yichen.Stores.IServices.csproj" />
+    <ProjectReference Include="..\Yichen.Stores.Model\Yichen.Stores.Model.csproj" />
+    <ProjectReference Include="..\Yichen.System.IRepository\Yichen.System.IRepository.csproj" />
+    <ProjectReference Include="..\Yichen.System.IServices\Yichen.System.IServices.csproj" />
+    <ProjectReference Include="..\Yichen.System.Model\Yichen.System.Model.csproj" />
+  </ItemGroup>
+
+</Project>

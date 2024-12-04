@@ -1,0 +1,21 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="7.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Yichen.Comm.Model\Yichen.Comm.Model.csproj" />
+    <ProjectReference Include="..\Yichen.Finance.Model\Yichen.Finance.Model.csproj" />
+    <ProjectReference Include="..\Yichen.Flow.Model\Yichen.Flow.Model.csproj" />
+    <ProjectReference Include="..\Yichen.Net.Caching\Yichen.Net.Caching.csproj" />
+    <ProjectReference Include="..\Yichen.System.Model\Yichen.System.Model.csproj" />
+  </ItemGroup>
+
+</Project>

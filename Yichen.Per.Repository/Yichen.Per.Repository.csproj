@@ -1,0 +1,23 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <BaseOutputPath>C:\YichenHostDll</BaseOutputPath>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Yichen.Comm.Repository\Yichen.Comm.Repository.csproj" />
+    <ProjectReference Include="..\Yichen.Net.Caching\Yichen.Net.Caching.csproj" />
+    <ProjectReference Include="..\Yichen.Per.IRepository\Yichen.Per.IRepository.csproj" />
+    <ProjectReference Include="..\Yichen.Per.Model\Yichen.Per.Model.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="Yichen.Comm.IRepository">
+      <HintPath>..\Yichen.Comm.IRepository\obj\Debug\net6.0\ref\Yichen.Comm.IRepository.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+</Project>

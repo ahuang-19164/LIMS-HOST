@@ -1,0 +1,22 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Essensoft.Paylink.WeChatPay" Version="4.0.12" />
+    <PackageReference Include="InitQ" Version="1.0.0.14" />
+    <PackageReference Include="Qc.YilianyunSdk" Version="1.0.7" />
+    <PackageReference Include="SKIT.FlurlHttpClient.Wechat.Api" Version="2.20.02" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Yichen.Net.Caching\Yichen.Net.Caching.csproj" />
+    <ProjectReference Include="..\Yichen.Net.Configuration\Yichen.Net.Configuration.csproj" />
+    <ProjectReference Include="..\Yichen.Net.Loging\Yichen.Net.Loging.csproj" />
+    <ProjectReference Include="..\Yichen.Net.Mapping\Yichen.Net.Mapping.csproj" />
+    <ProjectReference Include="..\Yichen.Net.WeChat.Service\Yichen.Net.WeChat.Service.csproj" />
+  </ItemGroup>
+
+</Project>

@@ -1,0 +1,28 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <BaseOutputPath>C:\YichenHostDll</BaseOutputPath>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Aliyun.OSS.SDK.NetCore" Version="2.13.0" />
+    <PackageReference Include="Nito.AsyncEx.Coordination" Version="5.1.2" />
+    <PackageReference Include="Qc.YilianyunSdk" Version="1.0.7" />
+    <PackageReference Include="Qiniu" Version="8.4.0" />
+    <PackageReference Include="SqlSugarCore" Version="5.1.3.35" />
+    <PackageReference Include="Tencent.QCloud.Cos.Sdk" Version="5.4.35" />
+    <PackageReference Include="ToolGood.Words" Version="3.1.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Yichen.Comm.IServices\Yichen.Comm.IServices.csproj" />
+    <ProjectReference Include="..\Yichen.Comm.Repository\Yichen.Comm.Repository.csproj" />
+    <ProjectReference Include="..\Yichen.Net.Auth\Yichen.Net.Auth.csproj" />
+    <ProjectReference Include="..\Yichen.Net.Caching\Yichen.Net.Caching.csproj" />
+    <ProjectReference Include="..\Yichen.Net.Utility\Yichen.Net.Utility.csproj" />
+  </ItemGroup>
+
+</Project>

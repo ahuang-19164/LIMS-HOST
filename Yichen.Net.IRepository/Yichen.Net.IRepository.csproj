@@ -1,0 +1,14 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <BaseOutputPath>C:\YichenHostDll</BaseOutputPath>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Yichen.Comm.IRepository\Yichen.Comm.IRepository.csproj" />
+    <ProjectReference Include="..\Yichen.Comm.Model\Yichen.Comm.Model.csproj" />
+    <ProjectReference Include="..\Yichen.Net.Model\Yichen.Net.Model.csproj" />
+  </ItemGroup>
+
+</Project>

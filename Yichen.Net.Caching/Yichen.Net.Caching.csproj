@@ -1,0 +1,18 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Extensions.Caching.Memory" Version="7.0.0" />
+    <PackageReference Include="SKIT.FlurlHttpClient.Wechat.Api" Version="2.20.2" />
+    <PackageReference Include="StackExchange.Redis" Version="2.6.80" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Yichen.Net.Configuration\Yichen.Net.Configuration.csproj" />
+    <ProjectReference Include="..\Yichen.Net.Utility\Yichen.Net.Utility.csproj" />
+  </ItemGroup>
+
+</Project>

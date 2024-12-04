@@ -1,0 +1,34 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <BaseOutputPath>C:\YichenHostDll</BaseOutputPath>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Nito.AsyncEx.Coordination" Version="5.1.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Yichen.Comm.Repository\Yichen.Comm.Repository.csproj" />
+    <ProjectReference Include="..\Yichen.Comm.Services\Yichen.Comm.Services.csproj" />
+    <ProjectReference Include="..\Yichen.Files.IServices\Yichen.Files.IServices.csproj" />
+    <ProjectReference Include="..\Yichen.Finance.IServices\Yichen.Finance.IServices.csproj" />
+    <ProjectReference Include="..\Yichen.Finance.Model\Yichen.Finance.Model.csproj" />
+    <ProjectReference Include="..\Yichen.Manage.IServices\Yichen.Manage.IServices.csproj" />
+    <ProjectReference Include="..\Yichen.Net.Auth\Yichen.Net.Auth.csproj" />
+    <ProjectReference Include="..\Yichen.Net.Caching\Yichen.Net.Caching.csproj" />
+    <ProjectReference Include="..\Yichen.Net.Data\Yichen.Net.Data.csproj" />
+    <ProjectReference Include="..\Yichen.Net.Json\Yichen.Net.Json.csproj" />
+    <ProjectReference Include="..\Yichen.Net.Table\Yichen.Net.Table.csproj" />
+    <ProjectReference Include="..\Yichen.Other.IRepository\Yichen.Other.IRepository.csproj" />
+    <ProjectReference Include="..\YiChen.Other.IServices\Yichen.Other.IServices.csproj" />
+    <ProjectReference Include="..\Yichen.Per.Model\Yichen.Per.Model.csproj" />
+    <ProjectReference Include="..\Yichen.System.Repository\Yichen.System.Repository.csproj" />
+    <ProjectReference Include="..\Yichen.Test.IRepository\Yichen.Test.IRepository.csproj" />
+    <ProjectReference Include="..\Yichen.Test.IServices\Yichen.Test.IServices.csproj" />
+  </ItemGroup>
+
+</Project>

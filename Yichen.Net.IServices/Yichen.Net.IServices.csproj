@@ -1,0 +1,18 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Http.Features" Version="5.0.17" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Yichen.Comm.IServices\Yichen.Comm.IServices.csproj" />
+    <ProjectReference Include="..\Yichen.Comm.Model\Yichen.Comm.Model.csproj" />
+    <ProjectReference Include="..\Yichen.Net.Configuration\Yichen.Net.Configuration.csproj" />
+    <ProjectReference Include="..\Yichen.Net.Model\Yichen.Net.Model.csproj" />
+  </ItemGroup>
+
+</Project>

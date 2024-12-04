@@ -1,0 +1,1372 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>YiChen.Net.Web.WebApi</name>
+    </assembly>
+    <members>
+        <member name="T:Yichen.Net.Web.WebApi.Controllers.AdvertController">
+            <summary>
+            广告api控制器
+            </summary>
+        </member>
+        <member name="M:Yichen.Net.Web.WebApi.Controllers.AdvertController.#ctor(Yichen.Net.Auth.HttpContextUser.IHttpContextUser,Yichen.Net.IServices.ICoreCmsArticleServices,Yichen.Net.IServices.ICoreCmsAdvertPositionServices,Yichen.Net.IServices.ICoreCmsAdvertisementServices)">
+            <summary>
+            构造函数
+            </summary>
+            <param name="user"></param>
+            <param name="articleServices"></param>
+            <param name="advertPositionServices"></param>
+            <param name="advertisementServices"></param>
+        </member>
+        <member name="M:Yichen.Net.Web.WebApi.Controllers.AdvertController.GetAdvertList(Yichen.Net.Model.FromBody.FMPageByIntId)">
+            <summary>
+            获取广告列表
+            </summary>
+            <param name="entity"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Yichen.Net.Web.WebApi.Controllers.AdvertController.GetPositionList(Yichen.Net.Model.FromBody.WxAdvert)">
+            <summary>
+            获取广告位置信息
+            </summary>
+            <param name="entity"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Yichen.Net.Web.WebApi.Controllers.AgentController">
+            <summary>
+            代理请求接口
+            </summary>
+        </member>
+        <member name="M:Yichen.Net.Web.WebApi.Controllers.AgentController.#ctor(Yichen.Net.Auth.HttpContextUser.IHttpContextUser,Yichen.Net.IServices.ICoreCmsAgentServices,Yichen.Net.IServices.ICoreCmsSettingServices,Yichen.Net.IServices.ICoreCmsAgentOrderServices,Yichen.Net.IServices.ICoreCmsUserServices,Yichen.Net.IServices.ICoreCmsGoodsServices,Yichen.Net.IServices.ICoreCmsAgentGoodsServices)">
+            <summary>
+            构造函数
+            </summary>
+            <param name="user"></param>
+            <param name="agentServices"></param>
+            <param name="settingServices"></param>
+            <param name="agentOrderServices"></param>
+            <param name="userServices"></param>
+            <param name="goodsServices"></param>
+            <param name="agentGoodsServices"></param>
+        </member>
+        <member name="M:Yichen.Net.Web.WebApi.Controllers.AgentController.GetStoreInfo(Yichen.Net.Model.FromBody.FMIntId)">
+            <summary>
+            获取店铺信息
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Yichen.Net.Web.WebApi.Controllers.AgentController.GetGoodsPageList(Yichen.Net.Model.FromBody.FMPageByWhereOrder)">
+            <summary>
+            根据查询条件获取分页数据
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Yichen.Net.Web.WebApi.Controllers.AgentController.Info">
+            <summary>
+            查询用户是否可以成为代理商
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Yichen.Net.Web.WebApi.Controllers.AgentController.ApplyAgent(Yichen.Net.Model.FromBody.FMAgentApply)">
+            <summary>
+            申请成为代理商接口
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Yichen.Net.Web.WebApi.Controllers.AgentController.GetTeamSum">
+            <summary>
+            获取我的下级用户数量
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Yichen.Net.Web.WebApi.Controllers.AgentController.GetOrderSum">
+            <summary>
+            获取我的订单统计
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Yichen.Net.Web.WebApi.Controllers.AgentController.MyOrder(Yichen.Net.Model.FromBody.FMPageByIntId)">
+            <summary>
+            我推广的订单
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Yichen.Net.Web.WebApi.Controllers.AgentController.SetStore(Yichen.Net.Model.FromBody.FMSetAgentStorePost)">
+            <summary>
+            店铺设置
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Yichen.Net.Web.WebApi.Controllers.AgentController.GetAgentRanking(Yichen.Net.Model.FromBody.FMPageByIntId)">
+            <summary>
+            获取代理商排行
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:Yichen.Net.Web.WebApi.Controllers.ArticleController">
+            <summary>
+            文章api控制器
+            </summary>
+        </member>
+        <member name="M:Yichen.Net.Web.WebApi.Controllers.ArticleController.#ctor(Yichen.Net.Auth.HttpContextUser.IHttpContextUser,Yichen.Net.IServices.ICoreCmsArticleServices,Yichen.Net.IServices.ICoreCmsArticleTypeServices)">
+            <summary>
+            构造函数
+            </summary>
+            <param name="user"></param>
+            <param name="articleServices"></param>
+            <param name="articleTypeServices"></param>
+        </member>
+        <member name="M:Yichen.Net.Web.WebApi.Controllers.ArticleController.NoticeList(Yichen.Net.Model.FromBody.FMPageByIntId)">
+            <summary>
+            获取通知列表
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Yichen.Net.Web.WebApi.Controllers.ArticleController.GetArticleList(Yichen.Net.Model.FromBody.FMPageByIntId)">
+            <summary>
+            获取文章列表
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Yichen.Net.Web.WebApi.Controllers.ArticleController.GetArticleDetail(Yichen.Net.Model.FromBody.FMIntId)">
+            <summary>
+            获取单个文章内容
+            </summary>
+            <param name="entity"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Yichen.Net.Web.WebApi.Controllers.CartController">
+            <summary>
+            购物车操作
+            </summary>
+        </member>
+        <member name="M:Yichen.Net.Web.WebApi.Controllers.CartController.#ctor(Yichen.Net.Auth.HttpContextUser.IHttpContextUser,Yichen.Net.IServices.ICoreCmsCartServices)">
+            <summary>
+            构造函数
+            </summary>
+        </member>
+        <member name="M:Yichen.Net.Web.WebApi.Controllers.CartController.AddCart(Yichen.Net.Model.FromBody.FMCartAdd)">
+            <summary>
+            添加单个货品到购物车
+            </summary>
+            <param name="entity"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Yichen.Net.Web.WebApi.Controllers.CartController.GetList(Yichen.Net.Model.FromBody.FMCartGetList)">
+            <summary>
+            获取购物车列表
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Yichen.Net.Web.WebApi.Controllers.CartController.DoDelete(Yichen.Net.Model.FromBody.FMIntId)">
+            <summary>
+            获取购物车列表
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Yichen.Net.Web.WebApi.Controllers.CartController.SetCartNum(Yichen.Net.Model.DTO.FMSetCartNum)">
+            <summary>
+            设置购物车商品数量
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Yichen.Net.Web.WebApi.Controllers.CartController.GetCartAvailableCoupon(Yichen.Net.Model.FromBody.FMCouponForUserCouponPost)">
+            <summary>
+            根据提交的数据判断哪些购物券可以使用
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:Yichen.Net.Web.WebApi.Controllers.CommonController">
+            <summary>
+            通用调用接口数据
+            </summary>
+        </member>
+        <member name="M:Yichen.Net.Web.WebApi.Controllers.CommonController.#ctor(Yichen.Net.IServices.ICoreCmsSettingServices,Yichen.Net.IServices.ICoreCmsAreaServices,Microsoft.AspNetCore.Hosting.IWebHostEnvironment,Yichen.Net.IServices.ICoreCmsServiceDescriptionServices,Yichen.Net.IServices.ICoreCmsSettingServices,Yichen.Net.IServices.IToolsServices)">
+            <summary>
+            构造函数
+            </summary>
+        </member>
+        <member name="M:Yichen.Net.Web.WebApi.Controllers.CommonController.InterFaceTest">
+            <summary>
+            接口测试反馈
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Yichen.Net.Web.WebApi.Controllers.CommonController.GetConfigV2">
+            <summary>
+            返回配置数据文件V2.0
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Yichen.Net.Web.WebApi.Controllers.CommonController.GetAreas">
+            <summary>
+            获取层级分配后的区域信息
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Yichen.Net.Web.WebApi.Controllers.CommonController.GetServiceDescription">
+            <summary>
+            获取商城关键词说明列表
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Yichen.Net.Web.WebApi.Controllers.CommonController.UploadImages">
+            <summary>
+            上传附件通用接口
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:Yichen.Net.Web.WebApi.Controllers.CouponController">
+            <summary>
+            优惠券接口
+            </summary>
+        </member>
+        <member name="M:Yichen.Net.Web.WebApi.Controllers.CouponController.#ctor(Yichen.Net.Auth.HttpContextUser.IHttpContextUser,Yichen.Net.IServices.ICoreCmsCouponServices,Yichen.Net.IServices.ICoreCmsPromotionServices)">
+            <summary>
+            构造函数
+            </summary>
+            <param name="user"></param>
+            <param name="couponServices"></param>
+            <param name="promotionServices"></param>
+        </member>
+        <member name="M:Yichen.Net.Web.WebApi.Controllers.CouponController.CouponList(Yichen.Net.Model.FromBody.FMCouponForUserCouponPost)">
+            <summary>
+            获取 可领取的优惠券
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Yichen.Net.Web.WebApi.Controllers.CouponController.CouponDetail(Yichen.Net.Model.FromBody.FMIntId)">
+            <summary>
+            获取优惠券 详情
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Yichen.Net.Web.WebApi.Controllers.CouponController.UserCoupon(Yichen.Net.Model.FromBody.FMCouponForUserCouponPost)">
+            <summary>
+            获取用户已领取的优惠券
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Yichen.Net.Web.WebApi.Controllers.CouponController.GetCoupon(Yichen.Net.Model.FromBody.FMIntId)">
+            <summary>
+            用户领取优惠券
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Yichen.Net.Web.WebApi.Controllers.CouponController.GetCouponKey(Yichen.Net.Model.FromBody.FMCouponForGetCouponKeyPost)">
+            <summary>
+            用户输入code领取优惠券
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:Yichen.Net.Web.WebApi.Controllers.DemoController">
+            <summary>
+                默认接口示例
+            </summary>
+        </member>
+        <member name="M:Yichen.Net.Web.WebApi.Controllers.DemoController.Index">
+            <summary>
+                默认首页
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:Yichen.Net.Web.WebApi.Controllers.DistributionController">
+            <summary>
+                分销请求接口
+            </summary>
+        </member>
+        <member name="M:Yichen.Net.Web.WebApi.Controllers.DistributionController.#ctor(Yichen.Net.Auth.HttpContextUser.IHttpContextUser,Yichen.Net.IServices.ICoreCmsDistributionServices,Yichen.Net.IServices.ICoreCmsSettingServices,Yichen.Net.IServices.ICoreCmsUserServices,Yichen.Net.IServices.ICoreCmsDistributionOrderServices)">
+            <summary>
+                构造函数
+            </summary>
+        </member>
+        <member name="M:Yichen.Net.Web.WebApi.Controllers.DistributionController.GetStoreInfo(Yichen.Net.Model.FromBody.FMIntId)">
+            <summary>
+                获取店铺信息
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Yichen.Net.Web.WebApi.Controllers.DistributionController.Info">
+            <summary>
+                查询用户是否可以成为分销商
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Yichen.Net.Web.WebApi.Controllers.DistributionController.ApplyDistribution(Yichen.Net.Model.FromBody.FMDistributionApply)">
+            <summary>
+                申请成为分销商接口
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Yichen.Net.Web.WebApi.Controllers.DistributionController.MyOrder(Yichen.Net.Model.FromBody.FMPageByIntId)">
+            <summary>
+                我推广的订单
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Yichen.Net.Web.WebApi.Controllers.DistributionController.SetStore(Yichen.Net.Model.FromBody.FMSetDistributionStorePost)">
+            <summary>
+                店铺设置
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Yichen.Net.Web.WebApi.Controllers.DistributionController.GetOrderSum">
+            <summary>
+                获取我的订单统计
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Yichen.Net.Web.WebApi.Controllers.DistributionController.GetTeamSum">
+            <summary>
+                获取我的下级用户数量
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Yichen.Net.Web.WebApi.Controllers.DistributionController.GetDistributionRanking(Yichen.Net.Model.FromBody.FMPageByIntId)">
+            <summary>
+                获取分销商排行
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:Yichen.Net.Web.WebApi.Controllers.FormController">
+            <summary>
+            表单接口
+            </summary>
+        </member>
+        <member name="M:Yichen.Net.Web.WebApi.Controllers.FormController.#ctor(Yichen.Net.IServices.ICoreCmsFormServices)">
+            <summary>
+            构造函数
+            </summary>
+            <param name="formServices"></param>
+        </member>
+        <member name="M:Yichen.Net.Web.WebApi.Controllers.FormController.GetFormDetial(Yichen.Net.Model.FromBody.FmGetForm)">
+            <summary>
+            万能表单/获取活动商品详情
+            </summary>
+            <param name="entity"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Yichen.Net.Web.WebApi.Controllers.FormController.AddSubmit(Yichen.Net.Model.FromBody.FmAddSubmit)">
+            <summary>
+            万能表单/提交表单
+            </summary>
+            <param name="entity"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Yichen.Net.Web.WebApi.Controllers.GoodController">
+            <summary>
+            商品相关接口处理
+            </summary>
+        </member>
+        <member name="M:Yichen.Net.Web.WebApi.Controllers.GoodController.#ctor(AutoMapper.IMapper,Yichen.Net.Auth.HttpContextUser.IHttpContextUser,Yichen.Net.IServices.ICoreCmsSettingServices,Yichen.Net.IServices.ICoreCmsGoodsCategoryServices,Yichen.Net.IServices.ICoreCmsGoodsServices,Yichen.Net.IServices.ICoreCmsProductsServices,Yichen.Net.IServices.ICoreCmsBrandServices,Yichen.Net.IServices.ICoreCmsOrderItemServices,Yichen.Net.IServices.ICoreCmsGoodsCommentServices,Yichen.Net.IServices.ICoreCmsGoodsParamsServices,Yichen.Net.IServices.ICoreCmsGoodsCollectionServices,Yichen.Net.IServices.ICoreCmsUserServices)">
+            <summary>
+            构造函数
+            </summary>
+        </member>
+        <member name="M:Yichen.Net.Web.WebApi.Controllers.GoodController.GetAllCategories">
+            <summary>
+            获取所有商品分类栏目数据
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Yichen.Net.Web.WebApi.Controllers.GoodController.GetGoodsPageList(Yichen.Net.Model.FromBody.FMPageByWhereOrder)">
+            <summary>
+            根据查询条件获取分页数据
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Yichen.Net.Web.WebApi.Controllers.GoodController.GetDetial(Yichen.Net.Model.FromBody.FMIntId)">
+            <summary>
+            获取商品详情
+            </summary>
+            <param name="entity"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Yichen.Net.Web.WebApi.Controllers.GoodController.GetProductInfo(Yichen.Net.Model.FromBody.FMGetProductInfo)">
+            <summary>
+            获取单个货品信息
+            </summary>
+            <param name="entity"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Yichen.Net.Web.WebApi.Controllers.GoodController.GetGoodsComment(Yichen.Net.Model.FromBody.FMPageByIntId)">
+            <summary>
+            获取商品评价列表分页数据
+            </summary>
+            <param name="entity"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Yichen.Net.Web.WebApi.Controllers.GoodController.GetGoodsParams(Yichen.Net.Model.FromBody.FMIntId)">
+            <summary>
+            获取单个商品参数
+            </summary>
+            <param name="entity"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Yichen.Net.Web.WebApi.Controllers.GoodController.GetGoodsRecommendList(Yichen.Net.Model.FromBody.FMIntId)">
+            <summary>
+            获取随机推荐商品
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Yichen.Net.Web.WebApi.Controllers.GoodController.GetDetialByToken(Yichen.Net.Model.FromBody.FMIntId)">
+            <summary>
+            根据Token获取商品详情
+            </summary>
+            <param name="entity"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Yichen.Net.Web.WebApi.Controllers.NoticeController">
+            <summary>
+            公告控制器
+            </summary>
+        </member>
+        <member name="M:Yichen.Net.Web.WebApi.Controllers.NoticeController.#ctor(Yichen.Net.Auth.HttpContextUser.IHttpContextUser,Yichen.Net.IServices.ICoreCmsNoticeServices)">
+            <summary>
+            构造函数
+            </summary>
+            <param name="user"></param>
+            <param name="noticeServices"></param>
+        </member>
+        <member name="M:Yichen.Net.Web.WebApi.Controllers.NoticeController.NoticeList(Yichen.Net.Model.FromBody.FMPageByIntId)">
+            <summary>
+            列表
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Yichen.Net.Web.WebApi.Controllers.NoticeController.NoticeInfo(Yichen.Net.Model.FromBody.FMIntId)">
+            <summary>
+            获取单个公告内容
+            </summary>
+            <param name="entity"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Yichen.Net.Web.WebApi.Controllers.OrderController">
+            <summary>
+            订单调用接口数据
+            </summary>
+        </member>
+        <member name="M:Yichen.Net.Web.WebApi.Controllers.OrderController.#ctor(Yichen.Net.Auth.HttpContextUser.IHttpContextUser,Yichen.Net.IServices.ICoreCmsOrderServices,Yichen.Net.IServices.ICoreCmsBillAftersalesServices,Yichen.Net.IServices.ICoreCmsSettingServices,Yichen.Net.IServices.ICoreCmsAreaServices,Yichen.Net.IServices.ICoreCmsBillReshipServices,Yichen.Net.IServices.ICoreCmsShipServices,Yichen.Net.IServices.ICoreCmsBillDeliveryServices,Yichen.Net.IServices.ICoreCmsLogisticsServices,Yichen.Net.IServices.ICoreCmsGoodsServices,Yichen.Net.IServices.ICoreCmsStoreServices)">
+            <summary>
+            构造函数
+            </summary>
+        </member>
+        <member name="M:Yichen.Net.Web.WebApi.Controllers.OrderController.GetTaxCode(Yichen.Net.Model.DTO.GetTaxCodePost)">
+            <summary>
+            发票模糊查询
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Yichen.Net.Web.WebApi.Controllers.OrderController.CreateOrder(Yichen.Net.Model.DTO.CreateOrder)">
+            <summary>
+            创建订单
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Yichen.Net.Web.WebApi.Controllers.OrderController.OrderDetails(Yichen.Net.Model.FromBody.FMStringId)">
+            <summary>
+            订单预览
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Yichen.Net.Web.WebApi.Controllers.OrderController.GetOrderStatusNum(Yichen.Net.Model.DTO.GetOrderStatusNumPost)">
+            <summary>
+            获取订单不同状态的数量
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Yichen.Net.Web.WebApi.Controllers.OrderController.GetOrderList(Yichen.Net.Model.DTO.GetOrderListPost)">
+            <summary>
+            获取个人订单列表
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Yichen.Net.Web.WebApi.Controllers.OrderController.CancelOrder(Yichen.Net.Model.FromBody.FMStringId)">
+            <summary>
+            取消订单
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Yichen.Net.Web.WebApi.Controllers.OrderController.DeleteOrder(Yichen.Net.Model.FromBody.FMStringId)">
+            <summary>
+            删除订单
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Yichen.Net.Web.WebApi.Controllers.OrderController.OrderConfirm(Yichen.Net.Model.FromBody.FMStringId)">
+            <summary>
+            确认签收订单
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Yichen.Net.Web.WebApi.Controllers.OrderController.AddAftersales(Yichen.Net.Model.DTO.ToAddBillAfterSalesPost)">
+            <summary>
+            添加售后单
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Yichen.Net.Web.WebApi.Controllers.OrderController.AftersalesList(Yichen.Net.Model.FromBody.FMPageByStringId)">
+            <summary>
+            获取售后单列表
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Yichen.Net.Web.WebApi.Controllers.OrderController.Aftersalesinfo(Yichen.Net.Model.FromBody.FMStringId)">
+            <summary>
+            获取售后单列表
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Yichen.Net.Web.WebApi.Controllers.OrderController.SendReship(Yichen.Net.Model.FromBody.FMBillReshipForSendReshipPost)">
+            <summary>
+            提交售后发货快递信息
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Yichen.Net.Web.WebApi.Controllers.OrderController.GetShip(Yichen.Net.Model.FromBody.FMIntId)">
+            <summary>
+            获取配送方式列表
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Yichen.Net.Web.WebApi.Controllers.OrderController.LogisticsByApi(Yichen.Net.Model.FromBody.FMApiLogisticsByApiPost)">
+            <summary>
+            前台物流查询接口
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:Yichen.Net.Web.WebApi.Controllers.PageController">
+            <summary>
+            页面接口
+            </summary>
+        </member>
+        <member name="M:Yichen.Net.Web.WebApi.Controllers.PageController.#ctor(AutoMapper.IMapper,Yichen.Net.IServices.ICoreCmsSettingServices,Yichen.Net.IServices.ICoreCmsPagesServices,Yichen.Net.IServices.ICoreCmsOrderServices,Yichen.Net.IServices.ICoreCmsUserServices)">
+            <summary>
+            构造函数
+            </summary>
+        </member>
+        <member name="M:Yichen.Net.Web.WebApi.Controllers.PageController.GetPageConfig(Yichen.Net.Model.FromBody.FMWxPost)">
+            <summary>
+            获取页面布局数据
+            </summary>
+            <param name="entity"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Yichen.Net.Web.WebApi.Controllers.PageController.GetRecod(Yichen.Net.Model.FromBody.FMGetRecodPost)">
+            <summary>
+            获取用户购买记录
+            </summary>
+        </member>
+        <member name="T:Yichen.Net.Web.WebApi.Controllers.PaymentsController">
+            <summary>
+            支付调用接口数据
+            </summary>
+        </member>
+        <member name="M:Yichen.Net.Web.WebApi.Controllers.PaymentsController.#ctor(Yichen.Net.Auth.HttpContextUser.IHttpContextUser,Yichen.Net.IServices.ICoreCmsBillPaymentsServices,Yichen.Net.IServices.ICoreCmsPaymentsServices)">
+            <summary>
+            构造函数
+            </summary>
+            <param name="user"></param>
+            <param name="billPaymentsServices"></param>
+            <param name="paymentsServices"></param>
+        </member>
+        <member name="M:Yichen.Net.Web.WebApi.Controllers.PaymentsController.GetList">
+            <summary>
+            获取支付方式列表
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Yichen.Net.Web.WebApi.Controllers.PaymentsController.CheckPay(Yichen.Net.Model.DTO.CheckPayPost)">
+            <summary>
+            支付确认页面取信息
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Yichen.Net.Web.WebApi.Controllers.PaymentsController.GetInfo(Yichen.Net.Model.FromBody.FMStringId)">
+            <summary>
+            获取支付单详情
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:Yichen.Net.Web.WebApi.Controllers.PayNotify.AliPayController">
+            <summary>
+            支付宝异步通知
+            </summary>
+        </member>
+        <member name="M:Yichen.Net.Web.WebApi.Controllers.PayNotify.AliPayController.#ctor(Essensoft.Paylink.Alipay.IAlipayNotifyClient,Microsoft.Extensions.Options.IOptions{Essensoft.Paylink.Alipay.AlipayOptions})">
+            <summary>
+            构造函数
+            </summary>
+            <param name="client"></param>
+            <param name="optionsAccessor"></param>
+        </member>
+        <member name="M:Yichen.Net.Web.WebApi.Controllers.PayNotify.AliPayController.Gateway">
+            <summary>
+            应用网关
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Yichen.Net.Web.WebApi.Controllers.PayNotify.AliPayController.Precreate">
+            <summary>
+            扫码支付异步通知
+            </summary>
+        </member>
+        <member name="M:Yichen.Net.Web.WebApi.Controllers.PayNotify.AliPayController.AppPay">
+            <summary>
+            APP支付异步通知
+            </summary>
+        </member>
+        <member name="M:Yichen.Net.Web.WebApi.Controllers.PayNotify.AliPayController.PagePay">
+            <summary>
+            电脑网站支付异步通知
+            </summary>
+        </member>
+        <member name="M:Yichen.Net.Web.WebApi.Controllers.PayNotify.AliPayController.WapPay">
+            <summary>
+            手机网站支付异步通知
+            </summary>
+        </member>
+        <member name="T:Yichen.Net.Web.WebApi.Controllers.PayNotify.WeChatPayController">
+            <summary>
+                微信支付异步通知
+            </summary>
+        </member>
+        <member name="M:Yichen.Net.Web.WebApi.Controllers.PayNotify.WeChatPayController.#ctor(Essensoft.Paylink.WeChatPay.V2.IWeChatPayNotifyClient,Microsoft.Extensions.Options.IOptions{Essensoft.Paylink.WeChatPay.WeChatPayOptions},Yichen.Net.IServices.ICoreCmsBillPaymentsServices,Yichen.Net.IServices.ICoreCmsBillRefundServices,Yichen.Net.Caching.AutoMate.RedisCache.IRedisOperationRepository)">
+            <summary>
+                构造函数
+            </summary>
+        </member>
+        <member name="M:Yichen.Net.Web.WebApi.Controllers.PayNotify.WeChatPayController.Unifiedorder">
+            <summary>
+                统一下单支付结果通知
+            </summary>
+        </member>
+        <member name="M:Yichen.Net.Web.WebApi.Controllers.PayNotify.WeChatPayController.Refund">
+            <summary>
+                退款结果通知
+            </summary>
+        </member>
+        <member name="T:Yichen.Net.Web.WebApi.Controllers.PinTuanController">
+            <summary>
+            拼团接口
+            </summary>
+        </member>
+        <member name="M:Yichen.Net.Web.WebApi.Controllers.PinTuanController.#ctor(Yichen.Net.Auth.HttpContextUser.IHttpContextUser,Yichen.Net.IServices.ICoreCmsPinTuanGoodsServices,Yichen.Net.IServices.ICoreCmsPinTuanRuleServices,Yichen.Net.IServices.ICoreCmsProductsServices,Yichen.Net.IServices.ICoreCmsPinTuanRecordServices,Yichen.Net.IServices.ICoreCmsGoodsServices)">
+            <summary>
+            构造函数
+            </summary>
+        </member>
+        <member name="M:Yichen.Net.Web.WebApi.Controllers.PinTuanController.GetList(Yichen.Net.Model.FromBody.FMIntId)">
+            <summary>
+            拼团列表
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Yichen.Net.Web.WebApi.Controllers.PinTuanController.GetGoodsInfo(Yichen.Net.Model.FromBody.FMIntId)">
+            <summary>
+            获取拼团商品信息
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Yichen.Net.Web.WebApi.Controllers.PinTuanController.GetProductInfo(Yichen.Net.Model.FromBody.FMGetProductInfo)">
+            <summary>
+            获取货品信息
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Yichen.Net.Web.WebApi.Controllers.PinTuanController.GetPinTuanTeam(Yichen.Net.Model.FromBody.FMGetPinTuanTeamPost)">
+            <summary>
+            根据订单id取拼团信息，用在订单详情页
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:Yichen.Net.Web.WebApi.Controllers.ServiceController">
+            <summary>
+            服务卡控制器
+            </summary>
+        </member>
+        <member name="M:Yichen.Net.Web.WebApi.Controllers.ServiceController.#ctor(Yichen.Net.IServices.ICoreCmsServicesServices,Yichen.Net.Auth.HttpContextUser.IHttpContextUser,Yichen.Net.IServices.ICoreCmsUserServicesOrderServices,Yichen.Net.IServices.ICoreCmsUserServicesTicketServices,Yichen.Net.IServices.ICoreCmsUserServices,Yichen.Net.IServices.ICoreCmsClerkServices,Yichen.Net.IServices.ICoreCmsUserServicesTicketVerificationLogServices,Yichen.Net.IServices.ICoreCmsStoreServices,Yichen.Net.IServices.ICoreCmsUserGradeServices)">
+            <summary>
+            构造函数
+            </summary>
+            <param name="servicesServices"></param>
+            <param name="user"></param>
+            <param name="userServicesOrderServices"></param>
+            <param name="userServicesTicketServices"></param>
+            <param name="userServices"></param>
+            <param name="clerkServices"></param>
+            <param name="ticketVerificationLogServices"></param>
+            <param name="storeServices"></param>
+            <param name="userGradeServices"></param>
+        </member>
+        <member name="M:Yichen.Net.Web.WebApi.Controllers.ServiceController.GetPageList(Yichen.Net.Model.FromBody.FMPageByIntId)">
+            <summary>
+            取得服务卡列表信息
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Yichen.Net.Web.WebApi.Controllers.ServiceController.GetDetails(Yichen.Net.Model.FromBody.FMIntId)">
+            <summary>
+            获取服务卡详情
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Yichen.Net.Web.WebApi.Controllers.ServiceController.AddServiceOrder(Yichen.Net.Model.FromBody.FMIntId)">
+            <summary>
+            取得服务卡列表信息
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Yichen.Net.Web.WebApi.Controllers.ServiceController.VerificationPageList(Yichen.Net.Model.FromBody.FMPageByIntId)">
+            <summary>
+            店铺核销的服务券列表
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Yichen.Net.Web.WebApi.Controllers.ServiceController.LogDelete(Yichen.Net.Model.FromBody.FMIntId)">
+            <summary>
+            软删除服务券核销单数据
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Yichen.Net.Web.WebApi.Controllers.ServiceController.GetTicketInfo(Yichen.Net.Model.FromBody.FMStringId)">
+            <summary>
+            获取单个提货单详情
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Yichen.Net.Web.WebApi.Controllers.ServiceController.VerificationTicket(Yichen.Net.Model.FromBody.FMStringId)">
+            <summary>
+            核销服务券
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:Yichen.Net.Web.WebApi.Controllers.StoreController">
+            <summary>
+            门店调用接口数据
+            </summary>
+        </member>
+        <member name="M:Yichen.Net.Web.WebApi.Controllers.StoreController.#ctor(Yichen.Net.Auth.HttpContextUser.IHttpContextUser,Yichen.Net.IServices.ICoreCmsStoreServices,Yichen.Net.IServices.ICoreCmsClerkServices,Yichen.Net.IServices.ICoreCmsSettingServices,Yichen.Net.IServices.ICoreCmsBillLadingServices,Yichen.Net.IServices.ICoreCmsOrderServices)">
+            <summary>
+            构造函数
+            </summary>
+        </member>
+        <member name="M:Yichen.Net.Web.WebApi.Controllers.StoreController.GetDefaultStore">
+            <summary>
+            获取默认的门店
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Yichen.Net.Web.WebApi.Controllers.StoreController.GetStoreList(Yichen.Net.Model.FromBody.FMGetStoreQueryPageByCoordinate)">
+            <summary>
+            获取门店列表数据
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Yichen.Net.Web.WebApi.Controllers.StoreController.GetRecommendKeys">
+            <summary>
+            获取推荐关键词
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Yichen.Net.Web.WebApi.Controllers.StoreController.GetStoreSwitch">
+            <summary>
+            判断是否开启门店自提
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Yichen.Net.Web.WebApi.Controllers.StoreController.GetStoreById(Yichen.Net.Model.FromBody.FMIntId)">
+            <summary>
+            根据序列获取门店数据
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Yichen.Net.Web.WebApi.Controllers.StoreController.IsClerk">
+            <summary>
+            判断访问用户是否是店员
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Yichen.Net.Web.WebApi.Controllers.StoreController.GetStoreByUserId">
+            <summary>
+            根据用户序列获取门店数据
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Yichen.Net.Web.WebApi.Controllers.StoreController.GetOrderPageByMerchant(Yichen.Net.Model.DTO.GetOrderPageByMerchantPost)">
+            <summary>
+            获取个人订单列表
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Yichen.Net.Web.WebApi.Controllers.StoreController.GetOrderPageByMerchantSearch(Yichen.Net.Model.DTO.GetOrderPageByMerchantSearcgPost)">
+            <summary>
+            搜索订单
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Yichen.Net.Web.WebApi.Controllers.StoreController.StoreLadingList(Yichen.Net.Model.FromBody.FMPageByIntId)">
+            <summary>
+            店铺提货单列表
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Yichen.Net.Web.WebApi.Controllers.StoreController.LadingDelete(Yichen.Net.Model.FromBody.FMStringId)">
+            <summary>
+            删除提货单数据
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Yichen.Net.Web.WebApi.Controllers.StoreController.LadingInfo(Yichen.Net.Model.FromBody.FMStringId)">
+            <summary>
+            获取单个提货单详情
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Yichen.Net.Web.WebApi.Controllers.StoreController.Lading(Yichen.Net.Model.FromBody.FMStringId)">
+            <summary>
+            核销订单
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:Yichen.Net.Web.WebApi.Controllers.UserController">
+            <summary>
+            用户操作事件
+            </summary>
+        </member>
+        <member name="M:Yichen.Net.Web.WebApi.Controllers.UserController.#ctor(Yichen.Net.Auth.HttpContextUser.IHttpContextUser,Yichen.Net.IServices.ICoreCmsUserWeChatInfoServices,Yichen.Net.IServices.ICoreCmsUserServices,Yichen.Net.Auth.Policys.PermissionRequirement,Yichen.Net.IServices.ICoreCmsSmsServices,Yichen.Net.IServices.ICoreCmsUserGradeServices,Yichen.Net.IServices.ICoreCmsUserLogServices,Microsoft.AspNetCore.Http.IHttpContextAccessor,Yichen.Net.IServices.ICoreCmsGoodsServices,Yichen.Net.IServices.ICoreCmsGoodsBrowsingServices,Yichen.Net.IServices.ICoreCmsCartServices,Yichen.Net.IServices.ICoreCmsGoodsCollectionServices,Yichen.Net.IServices.ICoreCmsUserShipServices,Yichen.Net.IServices.ICoreCmsAreaServices,Yichen.Net.IServices.ICoreCmsBillPaymentsServices,Yichen.Net.IServices.ICoreCmsGoodsCommentServices,Yichen.Net.IServices.ICoreCmsUserBankCardServices,Yichen.Net.IServices.ICoreCmsUserTocashServices,Yichen.Net.IServices.ICoreCmsUserBalanceServices,Yichen.Net.IServices.ICoreCmsInvoiceServices,Yichen.Net.IServices.ICoreCmsUserPointLogServices,Yichen.Net.IServices.ICoreCmsShareServices,Yichen.Net.IServices.ICoreCmsSettingServices,Yichen.Net.IServices.ICoreCmsServicesServices,Microsoft.Extensions.Options.IOptions{Yichen.Net.WeChat.Service.Options.WeChatOptions},Yichen.Net.IServices.ICoreCmsUserServicesOrderServices,Yichen.Net.IServices.ICoreCmsUserServicesTicketServices,Yichen.Net.IServices.ICoreCmsStoreServices,Yichen.Net.IServices.ICoreCmsCouponServices,Yichen.Net.IServices.ICoreCmsOrderServices,Yichen.Net.WeChat.Service.HttpClients.IWeChatApiHttpClientFactory)">
+            <summary>
+            构造函数
+            </summary>
+        </member>
+        <member name="M:Yichen.Net.Web.WebApi.Controllers.UserController.OnLogin(Yichen.Net.Model.FromBody.FMWxPost)">
+            <summary>
+            wx.login登陆成功之后发送的请求
+            </summary>
+            <param name="entity"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Yichen.Net.Web.WebApi.Controllers.UserController.DecodeEncryptedData(Yichen.Net.Model.FromBody.FMWxLoginDecodeEncryptedData)">
+            <summary>
+            核验数据并获取用户详细资料
+            </summary>
+            <param name="entity"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Yichen.Net.Web.WebApi.Controllers.UserController.SendSms(Yichen.Net.Model.FromBody.FMWxSendSMS)">
+            <summary>
+            用户短信发送
+            </summary>
+            <param name="entity"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Yichen.Net.Web.WebApi.Controllers.UserController.SmsLogin(Yichen.Net.Model.FromBody.FMWxAccountCreate)">
+            <summary>
+            手机短信验证码登陆，同时兼有手机短信注册的功能，还有第三方账户绑定的功能
+            </summary>
+            <param name="entity"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Yichen.Net.Web.WebApi.Controllers.UserController.DecryptPhoneNumber(Yichen.Net.Model.FromBody.FMWxLoginDecryptPhoneNumber)">
+            <summary>
+            微信小程序授权拉取手机号码
+            </summary>
+            <param name="entity"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Yichen.Net.Web.WebApi.Controllers.UserController.SmsLogin2(Yichen.Net.Model.FromBody.FMWxAccountCreate)">
+            <summary>
+            用户短信注册并返回jwt token(弃用)
+            </summary>
+            <param name="entity"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Yichen.Net.Web.WebApi.Controllers.UserController.GetAreaId(Yichen.Net.Model.DTO.GetAreaIdPost)">
+            <summary>
+            获取区域ID
+            </summary>
+            <param name="entity"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Yichen.Net.Web.WebApi.Controllers.UserController.LogOut">
+            <summary>
+            注销登录
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Yichen.Net.Web.WebApi.Controllers.UserController.IsPoint">
+            <summary>
+            判断是否开启积分
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Yichen.Net.Web.WebApi.Controllers.UserController.Share(Yichen.Net.Model.FromBody.FMShare)">
+            <summary>
+            统一分享url处理
+            新的分享，不管是二维码，还是地址，都走这个
+            page	场景值		1店铺首页，2商品详情页，3拼团详情页,4邀请好友（店铺页面,params里需要传store）,5文章页面,6参团页面，7自定义页面，8智能表单，9团购，10秒杀，11代理
+            url：前端地址
+            params：参数，根据场景值不一样而内容不一样
+            1
+            2 goodsId:商品ID
+            3 goodsId:商品ID，teamId:拼团ID
+            4 store:店铺code
+            5 articleId:文章ID，articleType:文章类型
+            6 goodsId:商品ID，groupId:参团ID，teamId:拼团ID
+            7 pageCode:自定义页面code
+            8 id：智能表单ID
+            9 goodsId:商品ID，groupId:团购秒杀ID
+                type	类型，1url，2二维码，3海报
+                token	可以保存推荐人的信息
+                client	终端，1普通h5，2微信小程序，3微信公众号（h5），4头条系小程序,5pc，6阿里小程序
+            10 store:店铺code
+            </summary>
+            <param name="entity"></param>
+            <returns>array</returns>
+        </member>
+        <member name="M:Yichen.Net.Web.WebApi.Controllers.UserController.DeShare(Yichen.Net.Model.FromBody.FMDeShare)">
+            <summary>
+            统一分享解码
+            </summary>
+            <param name="entity"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Yichen.Net.Web.WebApi.Controllers.UserController.SyncWeChatInfo(Yichen.Net.Model.FromBody.FMWxSync)">
+            <summary>
+            同步微信用户数据
+            </summary>
+            <param name="entity"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Yichen.Net.Web.WebApi.Controllers.UserController.GetUserInfo">
+            <summary>
+            获取用户信息test
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Yichen.Net.Web.WebApi.Controllers.UserController.GetCartNumber">
+            <summary>
+            获取购物车商品数量
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Yichen.Net.Web.WebApi.Controllers.UserController.GoodsCollectionCreateOrDelete(Yichen.Net.Model.FromBody.FMIntId)">
+            <summary>
+            商品取消/添加收藏
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Yichen.Net.Web.WebApi.Controllers.UserController.GetUserDefaultShip">
+            <summary>
+            获取用户获取用户默认收货地址
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Yichen.Net.Web.WebApi.Controllers.UserController.SetDefShip(Yichen.Net.Model.FromBody.FMIntId)">
+            <summary>
+            设置默认地址
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Yichen.Net.Web.WebApi.Controllers.UserController.GetUserPoint(Yichen.Net.Model.DTO.GetUserPointPost)">
+            <summary>
+            判断用户下单可以使用多少积分
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Yichen.Net.Web.WebApi.Controllers.UserController.GetUserShip">
+            <summary>
+            获取用户的收货地址列表
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Yichen.Net.Web.WebApi.Controllers.UserController.SaveUserShip(Yichen.Net.Model.DTO.SaveUserShipPost)">
+            <summary>
+            保存用户地址
+            </summary>
+            <param name="entity"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Yichen.Net.Web.WebApi.Controllers.UserController.GetShipDetail(Yichen.Net.Model.FromBody.FMIntId)">
+            <summary>
+            获取用户单个地址详情
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Yichen.Net.Web.WebApi.Controllers.UserController.RemoveShip(Yichen.Net.Model.FromBody.FMIntId)">
+            <summary>
+            收货地址删除
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Yichen.Net.Web.WebApi.Controllers.UserController.Pay(Yichen.Net.Model.DTO.PayPost)">
+            <summary>
+            支付
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Yichen.Net.Web.WebApi.Controllers.UserController.OrderEvaluate(Yichen.Net.Model.DTO.OrderEvaluatePost)">
+            <summary>
+            订单评价
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Yichen.Net.Web.WebApi.Controllers.UserController.GetMyBankcardsList">
+            <summary>
+            我的银行卡列表
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Yichen.Net.Web.WebApi.Controllers.UserController.AddBankCards(Yichen.Net.Model.Entities.CoreCmsUserBankCard)">
+            <summary>
+            添加银行卡
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Yichen.Net.Web.WebApi.Controllers.UserController.SetDefaultBankCard(Yichen.Net.Model.FromBody.FMIntId)">
+            <summary>
+            设置默认银行卡
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Yichen.Net.Web.WebApi.Controllers.UserController.GetBankCardInfo(Yichen.Net.Model.FromBody.FMIntId)">
+            <summary>
+            获取银行卡信息
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Yichen.Net.Web.WebApi.Controllers.UserController.GetDefaultBankCard">
+            <summary>
+            获取用户默认银行卡信息
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Yichen.Net.Web.WebApi.Controllers.UserController.Removebankcard(Yichen.Net.Model.FromBody.FMIntId)">
+            <summary>
+            删除银行卡信息
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Yichen.Net.Web.WebApi.Controllers.UserController.GetBankCardsOrganization(Yichen.Net.Model.FromBody.FMStringId)">
+            <summary>
+            获取银行卡组织信息
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Yichen.Net.Web.WebApi.Controllers.UserController.Cash(Yichen.Net.Model.FromBody.FMIntId)">
+            <summary>
+            提现申请
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Yichen.Net.Web.WebApi.Controllers.UserController.CashList(Yichen.Net.Model.FromBody.FMPageByIntId)">
+            <summary>
+            提现记录列表
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Yichen.Net.Web.WebApi.Controllers.UserController.UserBalance(Yichen.Net.Model.FromBody.FMGetBalancePost)">
+            <summary>
+            获取我的余额明细列表
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Yichen.Net.Web.WebApi.Controllers.UserController.UserInvoiceList(Yichen.Net.Model.FromBody.FMPageByIntId)">
+            <summary>
+            我的发票列表
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Yichen.Net.Web.WebApi.Controllers.UserController.UserPointLog(Yichen.Net.Model.FromBody.FMPageByIntId)">
+            <summary>
+            我的积分列表
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Yichen.Net.Web.WebApi.Controllers.UserController.GoodsCollectionList(Yichen.Net.Model.FromBody.FMPageByIntId)">
+            <summary>
+            取得商品收藏记录（关注）
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Yichen.Net.Web.WebApi.Controllers.UserController.GoodsCollection(Yichen.Net.Model.FromBody.FMIntId)">
+            <summary>
+            添加商品收藏（关注）
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Yichen.Net.Web.WebApi.Controllers.UserController.Goodsbrowsing(Yichen.Net.Model.FromBody.FMPageByIntId)">
+            <summary>
+            取得商品浏览足迹
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Yichen.Net.Web.WebApi.Controllers.UserController.AddGoodsBrowsing(Yichen.Net.Model.FromBody.FMIntId)">
+            <summary>
+            添加商品浏览足迹
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Yichen.Net.Web.WebApi.Controllers.UserController.DelGoodsBrowsing(Yichen.Net.Model.FromBody.FMIntId)">
+            <summary>
+            删除商品浏览足迹
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Yichen.Net.Web.WebApi.Controllers.UserController.ChangeAvatar(Yichen.Net.Model.FromBody.FMStringId)">
+            <summary>
+            更换头像
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Yichen.Net.Web.WebApi.Controllers.UserController.EditInfo(Yichen.Net.Model.FromBody.EditInfoPost)">
+            <summary>
+            编辑用户信息
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Yichen.Net.Web.WebApi.Controllers.UserController.EditPwd(Yichen.Net.Model.FromBody.EditPwdPost)">
+            <summary>
+            修改用户密码
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Yichen.Net.Web.WebApi.Controllers.UserController.MyInvite">
+            <summary>
+            邀请好友(获取我的要求相关信息)
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Yichen.Net.Web.WebApi.Controllers.UserController.SetMyInvite(Yichen.Net.Model.FromBody.FMIntId)">
+            <summary>
+            设置我的上级邀请人
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Yichen.Net.Web.WebApi.Controllers.UserController.GetMyInvite">
+            <summary>
+            获取我的上级邀请人
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Yichen.Net.Web.WebApi.Controllers.UserController.GetMyChildSum">
+            <summary>
+            获取我的下级用户数量
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Yichen.Net.Web.WebApi.Controllers.UserController.Recommend(Yichen.Net.Model.FromBody.FMPageByIntId)">
+            <summary>
+            获取用户推荐列表
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Yichen.Net.Web.WebApi.Controllers.UserController.ShareCode">
+            <summary>
+            获取用户邀请码
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Yichen.Net.Web.WebApi.Controllers.UserController.IsSign">
+            <summary>
+            判断是否签到
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Yichen.Net.Web.WebApi.Controllers.UserController.Sign">
+            <summary>
+            用户签到
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Yichen.Net.Web.WebApi.Controllers.UserController.ForgetPwd(Yichen.Net.Model.FromBody.FMForgetPwdPost)">
+            <summary>
+            用户找回密码
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Yichen.Net.Web.WebApi.Controllers.UserController.GetServicesPageList(Yichen.Net.Model.FromBody.FMPageByIntId)">
+            <summary>
+            取得服务卡列表信息
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Yichen.Net.Web.WebApi.Controllers.UserController.GetServicesTickets(Yichen.Net.Model.FromBody.FMPageByStringId)">
+            <summary>
+            取得服务卡列表信息
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:Yichen.Net.Web.WebApi.Controllers.WeChatAppletsMessageController">
+            <summary>
+            微信小程序消息订阅接口
+            </summary>
+        </member>
+        <member name="M:Yichen.Net.Web.WebApi.Controllers.WeChatAppletsMessageController.#ctor(Yichen.Net.Auth.HttpContextUser.IHttpContextUser,Yichen.Net.IServices.ICoreCmsUserWeChatMsgTemplateServices,Yichen.Net.IServices.ICoreCmsUserWeChatMsgSubscriptionSwitchServices,Yichen.Net.IServices.ICoreCmsUserWeChatMsgSubscriptionServices)">
+            <summary>
+            构造函数
+            </summary>
+        </member>
+        <member name="M:Yichen.Net.Web.WebApi.Controllers.WeChatAppletsMessageController.IsTip">
+            <summary>
+            获取用户是否订阅
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Yichen.Net.Web.WebApi.Controllers.WeChatAppletsMessageController.CloseTip">
+            <summary>
+            用户取消订阅
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Yichen.Net.Web.WebApi.Controllers.WeChatAppletsMessageController.Tmpl">
+            <summary>
+            获取订阅模板
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Yichen.Net.Web.WebApi.Controllers.WeChatAppletsMessageController.SetTip(Yichen.Net.Model.FromBody.SetWeChatAppletsMessageTip)">
+            <summary>
+            设置订阅信息
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:Yichen.Net.Web.WebApi.Controllers.WeChatOAuth.WxOpenController">
+            <summary>
+            微信小程序Controller
+            </summary>
+        </member>
+        <member name="P:Yichen.Net.Web.WebApi.Controllers.WeChatOAuth.WxOpenController.EcryptRequestDocument">
+            <summary>
+            原始的加密请求（如果不加密则为null）
+            </summary>
+        </member>
+        <member name="F:Yichen.Net.Web.WebApi.Controllers.WeChatOAuth.WxOpenController.UsingEncryptMessage">
+            <summary>
+            是否使用加密
+            </summary>
+        </member>
+        <member name="F:Yichen.Net.Web.WebApi.Controllers.WeChatOAuth.WxOpenController.CancelExecute">
+            <summary>
+            是否取消执行
+            </summary>
+        </member>
+        <member name="F:Yichen.Net.Web.WebApi.Controllers.WeChatOAuth.WxOpenController.UsingCompatibilityModelEncryptMessage">
+            <summary>
+            是否使用兼容模式
+            </summary>
+        </member>
+        <member name="M:Yichen.Net.Web.WebApi.Controllers.WeChatOAuth.WxOpenController.#ctor(Yichen.Net.WeChat.Service.HttpClients.IWeChatApiHttpClientFactory,Microsoft.Extensions.Options.IOptions{Yichen.Net.WeChat.Service.Options.WeChatOptions},MediatR.IMediator)">
+            <summary>
+            微信小程序服务器交互
+            </summary>
+            <param name="weChatApiHttpClientFactory"></param>
+            <param name="weChatOptions"></param>
+            <param name="mediator"></param>
+        </member>
+        <member name="M:Yichen.Net.Web.WebApi.Controllers.WeChatOAuth.WxOpenController.Get(Yichen.Net.WeChat.Service.Models.PostModel,System.String)">
+            <summary>
+            GET请求用于处理微信小程序后台的URL验证
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Yichen.Net.Web.WebApi.Controllers.WeChatOAuth.WxOpenController.Post(Yichen.Net.WeChat.Service.Models.PostModel)">
+            <summary>
+            接收服务器推送 文档：https://developers.weixin.qq.com/miniprogram/dev/framework/server-ability/message-push.html
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Yichen.Net.Web.WebApi.Controllers.WeChatOAuth.WxOpenController.ExecuteProcess(System.Xml.Linq.XDocument,System.String)">
+            <summary>
+            对解密后的xml数据进行筛选并分发处理结果
+            </summary>
+        </member>
+        <member name="M:Yichen.Net.Web.WebApi.Controllers.WeChatOAuth.WxOpenController.Init(System.Xml.Linq.XDocument,Yichen.Net.WeChat.Service.Models.PostModel,System.String@)">
+            <summary>
+            初始化获取xml文本数据
+            </summary>
+            <param name="postDataDocument"></param>
+            <param name="postModel"></param>
+            <param name="msgXml"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Yichen.Net.Web.WebApi.Program">
+            <summary>
+            启动类
+            </summary>
+        </member>
+        <member name="M:Yichen.Net.Web.WebApi.Program.Main(System.String[])">
+            <summary>
+                启动配置
+            </summary>
+            <param name="args"></param>
+        </member>
+        <member name="M:Yichen.Net.Web.WebApi.Program.CreateHostBuilder(System.String[])">
+            <summary>
+                创建启动支撑
+            </summary>
+            <param name="args"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Yichen.Net.Web.WebApi.Startup">
+            <summary>
+            启动配置
+            </summary>
+        </member>
+        <member name="M:Yichen.Net.Web.WebApi.Startup.#ctor(Microsoft.Extensions.Configuration.IConfiguration,Microsoft.AspNetCore.Hosting.IWebHostEnvironment)">
+            <summary>
+            构造函数
+            </summary>
+            <param name="configuration"></param>
+            <param name="env"></param>
+        </member>
+        <member name="P:Yichen.Net.Web.WebApi.Startup.Configuration">
+            <summary>
+            配置属性
+            </summary>
+        </member>
+        <member name="P:Yichen.Net.Web.WebApi.Startup.Env">
+            <summary>
+            web环境
+            </summary>
+        </member>
+        <member name="M:Yichen.Net.Web.WebApi.Startup.ConfigureServices(Microsoft.Extensions.DependencyInjection.IServiceCollection)">
+            This method gets called by the runtime. Use this method to add services to the container.
+        </member>
+        <member name="M:Yichen.Net.Web.WebApi.Startup.ConfigureContainer(Autofac.ContainerBuilder)">
+            <summary>
+                Autofac规则配置
+            </summary>
+            <param name="builder"></param>
+        </member>
+        <member name="M:Yichen.Net.Web.WebApi.Startup.Configure(Microsoft.AspNetCore.Builder.IApplicationBuilder,Microsoft.AspNetCore.Hosting.IWebHostEnvironment)">
+            <summary>
+             This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
+            </summary>
+            <param name="app"></param>
+            <param name="env"></param>
+        </member>
+        <member name="T:YiChen.Net.Web.WebApi.Controllers.GroupController">
+            <summary>
+            团购调用接口数据
+            </summary>
+        </member>
+        <member name="M:YiChen.Net.Web.WebApi.Controllers.GroupController.#ctor(Yichen.Net.Auth.HttpContextUser.IHttpContextUser,Yichen.Net.IServices.ICoreCmsPromotionServices,Yichen.Net.IServices.ICoreCmsGoodsServices)">
+            <summary>
+            构造函数
+            </summary>
+        </member>
+        <member name="M:YiChen.Net.Web.WebApi.Controllers.GroupController.GetList(Yichen.Net.Model.FromBody.FMGroupGetListPost)">
+            <summary>
+            获取秒杀团购列表
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:YiChen.Net.Web.WebApi.Controllers.GroupController.GetGoodsDetial(Yichen.Net.Model.FromBody.FMGetGoodsDetial)">
+            <summary>
+            获取秒杀团购详情
+            </summary>
+            <returns></returns>
+        </member>
+    </members>
+</doc>

@@ -1,0 +1,15 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Yichen.Net.Auth\Yichen.Net.Auth.csproj" />
+    <ProjectReference Include="..\Yichen.Net.Configuration\Yichen.Net.Configuration.csproj" />
+    <ProjectReference Include="..\Yichen.Net.Core\Yichen.Net.Core.csproj" />
+    <ProjectReference Include="..\Yichen.Net.Loging\Yichen.Net.Loging.csproj" />
+    <ProjectReference Include="..\Yichen.Net.Utility\Yichen.Net.Utility.csproj" />
+  </ItemGroup>
+
+</Project>

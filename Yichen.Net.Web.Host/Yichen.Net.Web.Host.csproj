@@ -1,0 +1,153 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <SatelliteResourceLanguages>zh-Hans</SatelliteResourceLanguages>
+    <MvcRazorCompileOnPublish>false</MvcRazorCompileOnPublish>
+    <UserSecretsId>077906fd-e490-4431-9bae-c3a48ae21992</UserSecretsId>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <DebugType>portable</DebugType>
+    <DebugSymbols>true</DebugSymbols>
+    <DocumentationFile>doc.xml</DocumentationFile>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <DebugType>none</DebugType>
+    <DebugSymbols>false</DebugSymbols>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="App_Data\**" />
+    <Compile Remove="logs\**" />
+    <Compile Remove="wwwroot\scripts\**" />
+    <Content Remove="App_Data\**" />
+    <Content Remove="logs\**" />
+    <Content Remove="wwwroot\scripts\**" />
+    <EmbeddedResource Remove="App_Data\**" />
+    <EmbeddedResource Remove="logs\**" />
+    <EmbeddedResource Remove="wwwroot\scripts\**" />
+    <None Remove="App_Data\**" />
+    <None Remove="logs\**" />
+    <None Remove="wwwroot\scripts\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Remove="wwwroot\static\poster\此处会存放临时带背景海报.txt" />
+    <Content Remove="wwwroot\static\qrCode\weChat\此处会存放用户唯一二维码用于生成带背景海报.txt" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="illegalWord\IllegalKeywords.txt" />
+    <None Remove="illegalWord\IllegalSql.txt" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="illegalWord\IllegalSql.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="illegalWord\IllegalKeywords.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Autofac.Extensions.DependencyInjection" Version="8.0.0" />
+    <PackageReference Include="Autofac.Extras.DynamicProxy" Version="6.0.1" />
+    <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="12.0.0" />
+    <PackageReference Include="Essensoft.Paylink.Alipay" Version="4.0.12" />
+    <PackageReference Include="Essensoft.Paylink.WeChatPay" Version="4.0.12" />
+    <PackageReference Include="Hangfire" Version="1.7.31" />
+    <PackageReference Include="Hangfire.Core" Version="1.7.31" />
+    <PackageReference Include="Hangfire.Dashboard.BasicAuthorization" Version="1.0.2" />
+    <PackageReference Include="Hangfire.Redis.StackExchange" Version="1.8.6" />
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.NewtonsoftJson" Version="6.0.10" />
+    <PackageReference Include="Microsoft.Data.SqlClient" Version="5.0.1" />
+    <PackageReference Include="Microsoft.DotNet.PlatformAbstractions" Version="3.1.6" />
+    <PackageReference Include="Microsoft.Extensions.PlatformAbstractions" Version="1.1.0" />
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="6.0.10" />
+    <PackageReference Include="Nito.AsyncEx" Version="5.1.2" />
+    <PackageReference Include="NLog" Version="5.1.0" />
+    <PackageReference Include="NLog.Web.AspNetCore" Version="5.2.0" />
+    <PackageReference Include="Qc.YilianyunSdk" Version="1.0.7" />
+    <PackageReference Include="Snowflake.Core" Version="2.0.0" />
+    <PackageReference Include="StackExchange.Redis" Version="2.6.80" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Yichen.BOM.IServices\Yichen.BOM.IServices.csproj" />
+    <ProjectReference Include="..\Yichen.Files.IServices\Yichen.Files.IServices.csproj" />
+    <ProjectReference Include="..\Yichen.Finance.IServices\Yichen.Finance.IServices.csproj" />
+    <ProjectReference Include="..\Yichen.Finance.Model\Yichen.Finance.Model.csproj" />
+    <ProjectReference Include="..\Yichen.Flile.Model\Yichen.Files.Model.csproj" />
+    <ProjectReference Include="..\Yichen.Manage.IServices\Yichen.Manage.IServices.csproj" />
+    <ProjectReference Include="..\Yichen.Net.Auth\Yichen.Net.Auth.csproj" />
+    <ProjectReference Include="..\Yichen.Net.Configuration\Yichen.Net.Configuration.csproj" />
+    <ProjectReference Include="..\Yichen.Net.Core\Yichen.Net.Core.csproj" />
+    <ProjectReference Include="..\Yichen.Net.Filter\Yichen.Net.Filter.csproj" />
+    <ProjectReference Include="..\Yichen.Net.IRepository\Yichen.Net.IRepository.csproj" />
+    <ProjectReference Include="..\Yichen.Net.Loging\Yichen.Net.Loging.csproj" />
+    <ProjectReference Include="..\Yichen.Net.Mapping\Yichen.Net.Mapping.csproj" />
+    <ProjectReference Include="..\Yichen.Net.Middlewares\Yichen.Net.Middlewares.csproj" />
+    <ProjectReference Include="..\Yichen.Net.Model\Yichen.Net.Model.csproj" />
+    <ProjectReference Include="..\Yichen.Net.Repository\Yichen.Net.Repository.csproj" />
+    <ProjectReference Include="..\Yichen.Net.Task\Yichen.Net.Tasks.csproj" />
+    <ProjectReference Include="..\Yichen.Net.WeChat.Service\Yichen.Net.WeChat.Service.csproj" />
+    <ProjectReference Include="..\Yichen.Per.IServices\Yichen.Per.IServices.csproj" />
+    <ProjectReference Include="..\Yichen.QC.IServices\Yichen.QC.IServices.csproj" />
+    <ProjectReference Include="..\Yichen.Report.IServices\Yichen.Report.IServices.csproj" />
+    <ProjectReference Include="..\Yichen.Report.Model\Yichen.Report.Model.csproj" />
+    <ProjectReference Include="..\Yichen.Stores.IServices\Yichen.Stores.IServices.csproj" />
+    <ProjectReference Include="..\Yichen.Stores.Model\Yichen.Stores.Model.csproj" />
+    <ProjectReference Include="..\Yichen.System.IServices\Yichen.System.IServices.csproj" />
+    <ProjectReference Include="..\Yichen.System.Model\Yichen.System.Model.csproj" />
+    <ProjectReference Include="..\Yichen.System.Services\Yichen.System.Services.csproj" />
+    <ProjectReference Include="..\Yichen.Test.IRepository\Yichen.Test.IRepository.csproj" />
+    <ProjectReference Include="..\Yichen.Test.IServices\Yichen.Test.IServices.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="wwwroot\static\poster\此处会存放临时带背景海报.txt" />
+    <None Include="wwwroot\static\qrCode\weChat\此处会存放用户唯一二维码用于生成带背景海报.txt" />
+    <None Include="wwwroot\Swagger1\js\site.js" />
+    <None Include="wwwroot\Swagger1\lib\bootstrap\dist\css\bootstrap-grid.css.map" />
+    <None Include="wwwroot\Swagger1\lib\bootstrap\dist\css\bootstrap-grid.min.css.map" />
+    <None Include="wwwroot\Swagger1\lib\bootstrap\dist\css\bootstrap-reboot.css.map" />
+    <None Include="wwwroot\Swagger1\lib\bootstrap\dist\css\bootstrap-reboot.min.css.map" />
+    <None Include="wwwroot\Swagger1\lib\bootstrap\dist\css\bootstrap.css.map" />
+    <None Include="wwwroot\Swagger1\lib\bootstrap\dist\css\bootstrap.min.css.map" />
+    <None Include="wwwroot\Swagger1\lib\bootstrap\dist\js\bootstrap.bundle.js" />
+    <None Include="wwwroot\Swagger1\lib\bootstrap\dist\js\bootstrap.bundle.js.map" />
+    <None Include="wwwroot\Swagger1\lib\bootstrap\dist\js\bootstrap.bundle.min.js" />
+    <None Include="wwwroot\Swagger1\lib\bootstrap\dist\js\bootstrap.bundle.min.js.map" />
+    <None Include="wwwroot\Swagger1\lib\bootstrap\dist\js\bootstrap.js" />
+    <None Include="wwwroot\Swagger1\lib\bootstrap\dist\js\bootstrap.js.map" />
+    <None Include="wwwroot\Swagger1\lib\bootstrap\dist\js\bootstrap.min.js" />
+    <None Include="wwwroot\Swagger1\lib\bootstrap\dist\js\bootstrap.min.js.map" />
+    <None Include="wwwroot\Swagger1\lib\bootstrap\LICENSE" />
+    <None Include="wwwroot\Swagger1\lib\jquery-validation-unobtrusive\jquery.validate.unobtrusive.js" />
+    <None Include="wwwroot\Swagger1\lib\jquery-validation-unobtrusive\jquery.validate.unobtrusive.min.js" />
+    <None Include="wwwroot\Swagger1\lib\jquery-validation\dist\additional-methods.js" />
+    <None Include="wwwroot\Swagger1\lib\jquery-validation\dist\additional-methods.min.js" />
+    <None Include="wwwroot\Swagger1\lib\jquery-validation\dist\jquery.validate.js" />
+    <None Include="wwwroot\Swagger1\lib\jquery-validation\dist\jquery.validate.min.js" />
+    <None Include="wwwroot\Swagger1\lib\jquery-validation\LICENSE.md" />
+    <None Include="wwwroot\Swagger1\lib\jquery\dist\jquery.js" />
+    <None Include="wwwroot\Swagger1\lib\jquery\dist\jquery.min.js" />
+    <None Include="wwwroot\Swagger1\lib\jquery\dist\jquery.min.map" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="doc.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Dockerfile">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
+  <ProjectExtensions><VisualStudio><UserProperties appsettings_1json__JsonSchema="" /></VisualStudio></ProjectExtensions>
+
+
+</Project>

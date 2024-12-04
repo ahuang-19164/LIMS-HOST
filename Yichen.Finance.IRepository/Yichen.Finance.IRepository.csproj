@@ -1,0 +1,15 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <BaseOutputPath>C:\YichenHostDll</BaseOutputPath>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Yichen.Comm.IRepository\Yichen.Comm.IRepository.csproj" />
+    <ProjectReference Include="..\Yichen.Finance.Model\Yichen.Finance.Model.csproj" />
+  </ItemGroup>
+
+</Project>

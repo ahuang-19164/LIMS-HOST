@@ -1,0 +1,22 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="DotLiquid" Version="2.2.677" />
+    <PackageReference Include="Hangfire" Version="1.7.31" />
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="7.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Yichen.Jop.IServices\Yichen.Jop.IServices.csproj" />
+    <ProjectReference Include="..\Yichen.Net.IRepository\Yichen.Net.IRepository.csproj" />
+    <ProjectReference Include="..\Yichen.Net.Loging\Yichen.Net.Loging.csproj" />
+    <ProjectReference Include="..\Yichen.Net.Repository\Yichen.Net.Repository.csproj" />
+    <ProjectReference Include="..\Yichen.Net.Utility\Yichen.Net.Utility.csproj" />
+    <ProjectReference Include="..\Yichen.Stores.IServices\Yichen.Stores.IServices.csproj" />
+  </ItemGroup>
+
+</Project>

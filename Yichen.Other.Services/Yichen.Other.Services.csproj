@@ -1,0 +1,25 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <BaseOutputPath>C:\YichenHostDll</BaseOutputPath>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Nito.AsyncEx.Coordination" Version="5.1.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Yichen.Comm.IRepository\Yichen.Comm.IRepository.csproj" />
+    <ProjectReference Include="..\Yichen.Comm.Services\Yichen.Comm.Services.csproj" />
+    <ProjectReference Include="..\Yichen.Net.Table\Yichen.Net.Table.csproj" />
+    <ProjectReference Include="..\Yichen.Other.IRepository\Yichen.Other.IRepository.csproj" />
+    <ProjectReference Include="..\YiChen.Other.IServices\Yichen.Other.IServices.csproj" />
+    <ProjectReference Include="..\Yichen.Other.Model\Yichen.Other.Model.csproj" />
+    <ProjectReference Include="..\Yichen.Per.IRepository\Yichen.Per.IRepository.csproj" />
+    <ProjectReference Include="..\Yichen.Per.Model\Yichen.Per.Model.csproj" />
+  </ItemGroup>
+
+</Project>

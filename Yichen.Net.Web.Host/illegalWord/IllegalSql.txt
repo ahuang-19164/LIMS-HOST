@@ -1,0 +1,1 @@
+﻿select|update|insert|delete|drop|truncate|sleep|union|xp_|sp_|0x_|exec|execute|administrator

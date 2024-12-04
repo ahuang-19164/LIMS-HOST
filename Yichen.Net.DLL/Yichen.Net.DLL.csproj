@@ -1,0 +1,20 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="SqlSugar.IOC" Version="1.9.0" />
+    <PackageReference Include="SqlSugarCore" Version="5.1.3.29" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Yichen.Net.Caching\YiChen.Net.Caching.csproj" />
+    <ProjectReference Include="..\Yichen.Net.Configuration\YiChen.Net.Configuration.csproj" />
+    <ProjectReference Include="..\Yichen.Net.Data\Yichen.Net.Data.csproj" />
+  </ItemGroup>
+
+</Project>

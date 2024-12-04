@@ -1,0 +1,731 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Yichen.Net.Web.Host</name>
+    </assembly>
+    <members>
+        <member name="T:Yichen.Net.Web.Host.Controllers.BaseController">
+            <summary>
+            基础访问接口
+            </summary>
+        </member>
+        <member name="M:Yichen.Net.Web.Host.Controllers.BaseController.#ctor(Yichen.System.IServices.ISysCommServices,Yichen.Net.Auth.HttpContextUser.IHttpContextUser,Yichen.Comm.IServices.IToolsServices)">
+            <summary>
+            构造函数
+            </summary>
+        </member>
+        <member name="M:Yichen.Net.Web.Host.Controllers.BaseController.SysUpdate(Yichen.Net.Data.uInfo)">
+            <summary>
+            系统信息修改
+            </summary>
+            <param name="infos"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Yichen.Net.Web.Host.Controllers.BaseController.SysSelect(Yichen.Net.Data.sInfo)">
+            <summary>
+            系统信息查询
+            </summary>
+            <param name="infos"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Yichen.Net.Web.Host.Controllers.BaseController.SysInsert(Yichen.Net.Data.iInfo)">
+            <summary>
+            系统信息插入
+            </summary>
+            <param name="infos"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Yichen.Net.Web.Host.Controllers.BaseController.SysDelete(Yichen.Net.Data.dInfo)">
+            <summary>
+            系统信息删除
+            </summary>
+            <param name="infos"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Yichen.Net.Web.Host.Controllers.BaseController.SysHide(Yichen.Net.Data.hideInfo)">
+            <summary>
+            系统信息隐藏
+            </summary>
+            <param name="infos"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Yichen.Net.Web.Host.Controllers.BaseController.SysSaveDT(Yichen.Net.Data.SaveTableInfo)">
+            <summary>
+            系统信息整表保存
+            </summary>
+            <param name="infos"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Yichen.Net.Web.Host.Controllers.BaseController.BaseUpdate(Yichen.Net.Data.uInfo)">
+            <summary>
+            系统信息修改
+            </summary>
+            <param name="infos"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Yichen.Net.Web.Host.Controllers.BaseController.BaseSelect(Yichen.Net.Data.sInfo)">
+            <summary>
+            系统信息查询
+            </summary>
+            <param name="infos"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Yichen.Net.Web.Host.Controllers.BaseController.BaseInsert(Yichen.Net.Data.iInfo)">
+            <summary>
+            系统信息插入
+            </summary>
+            <param name="infos"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Yichen.Net.Web.Host.Controllers.BaseController.BaseDelete(Yichen.Net.Data.dInfo)">
+            <summary>
+            系统信息删除
+            </summary>
+            <param name="infos"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Yichen.Net.Web.Host.Controllers.BaseController.BaseHide(Yichen.Net.Data.hideInfo)">
+            <summary>
+            系统信息隐藏
+            </summary>
+            <param name="infos"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Yichen.Net.Web.Host.Controllers.BaseController.BaseSaveDT(Yichen.Net.Data.SaveTableInfo)">
+            <summary>
+            系统信息整表保存
+            </summary>
+            <param name="infos"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Yichen.Net.Web.Host.Controllers.BOMController.#ctor(Yichen.BOM.IServices.IStatisticServices,Yichen.BOM.IServices.IDashboardServices)">
+            <summary>
+            构造函数
+            </summary>
+        </member>
+        <member name="M:Yichen.Net.Web.Host.Controllers.BOMController.GetStatistic(Yichen.BOM.Model.StatisticModel)">
+            <summary>
+            综合查询
+            </summary>
+            <param name="infos"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Yichen.Net.Web.Host.Controllers.BOMController.GetDashboard">
+            <summary>
+            首页报表  http://localhost:9600/api/BOM/GetDashboard
+            </summary>
+            <param name="infos"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Yichen.Net.Web.Host.Controllers.CheckHandleController.#ctor(Yichen.Per.IServices.IPerInfoHandleServices)">
+            <summary>
+            构造函数
+            </summary>
+        </member>
+        <member name="M:Yichen.Net.Web.Host.Controllers.CheckHandleController.GetCheckInfo(Yichen.Per.Model.CheckSelectModel)">
+            <summary>
+            录入信息审核
+            </summary>
+            <param name="infos"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Yichen.Net.Web.Host.Controllers.CheckHandleController.CheckInfo(Yichen.Per.Model.CheckInfoModel)">
+            <summary>
+            录入信息审核
+            </summary>
+            <param name="infos"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Yichen.Net.Web.Host.Controllers.CheckHandleController.CheckRe(Yichen.Per.Model.CheckInfoModel)">
+            <summary>
+            反审核信息
+            </summary>
+            <param name="infos"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Yichen.Net.Web.Host.Controllers.CheckHandleController.CheckBc(Yichen.Per.Model.CheckInfoModel)">
+            <summary>
+            补打条码
+            </summary>
+            <param name="infos"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Yichen.Net.Web.Host.Controllers.CheckHandleController.GetSortInfo(Yichen.Per.Model.SortSelectModel)">
+            <summary>
+            获取分拣信息
+            </summary>
+            <param name="infos"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Yichen.Net.Web.Host.Controllers.CheckHandleController.SortInfo(Yichen.Per.Model.SortInfoModel)">
+            <summary>
+            分拣处理方法
+            </summary>
+            <param name="infos"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Yichen.Net.Web.Host.Controllers.CheckHandleController.GetReceiveInfo(Yichen.Per.Model.ReceiveSelectModel)">
+            <summary>
+            获取接收信息
+            </summary>
+            <param name="infos"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Yichen.Net.Web.Host.Controllers.CheckHandleController.ReceiveInfo(Yichen.Per.Model.ReceiveInfoModel)">
+            <summary>
+            信息接收
+            </summary>
+            <param name="infos"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Yichen.Net.Web.Host.Controllers.CheckHandleController.ReceiveRe(Yichen.Per.Model.ReceiveInfoModel)">
+            <summary>
+            信息反接收
+            </summary>
+            <param name="infos"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Yichen.Net.Web.Host.Controllers.CheckHandleController.EditInfo(Yichen.Per.Model.EntryInfoModel)">
+            <summary>
+            编辑样本信息
+            </summary>
+            <param name="infos"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Yichen.Net.Web.Host.Controllers.FileHandleController.#ctor(Yichen.System.IServices.ISysCommServices,Yichen.Files.IServices.IFileHandleServices)">
+            <summary>
+            构造函数
+            </summary>
+        </member>
+        <member name="M:Yichen.Net.Web.Host.Controllers.FileHandleController.SysDownFile(Yichen.Comm.Model.commInfoModel{Yichen.Files.Model.FileModel})">
+            <summary>
+            下载文件
+            </summary>
+            <param name="infos"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Yichen.Net.Web.Host.Controllers.FileHandleController.SysUpFile(Yichen.Comm.Model.commInfoModel{Yichen.Files.Model.FileModel})">
+            <summary>
+            系统信息查询
+            </summary>
+            <param name="infos"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Yichen.Net.Web.Host.Controllers.FileHandleController.FlowUpFile(Yichen.Comm.Model.commInfoModel{Yichen.Files.Model.FileModel})">
+            <summary>
+            上传flow文件
+            </summary>
+            <param name="infos"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Yichen.Net.Web.Host.Controllers.FileHandleController.FlowDownFile(Yichen.Comm.Model.commInfoModel{Yichen.Files.Model.FileModel})">
+            <summary>
+            下载flow文件
+            </summary>
+            <param name="infos"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Yichen.Net.Web.Host.Controllers.FileHandleController.TestUpFile(Yichen.Comm.Model.commInfoModel{Yichen.Files.Model.FileModel})">
+            <summary>
+            上传检验结果文件
+            </summary>
+            <param name="infos"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Yichen.Net.Web.Host.Controllers.FileHandleController.TestDownFile(Yichen.Comm.Model.commInfoModel{Yichen.Files.Model.FileModel})">
+            <summary>
+            下载检验结果文件
+            </summary>
+            <param name="infos"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Yichen.Net.Web.Host.Controllers.FileHandleController.UpgradeClient(Yichen.Files.Model.DownFileModel)">
+            <summary>
+            更新客户端
+            </summary>
+            <param name="infos"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Yichen.Net.Web.Host.Controllers.FileHandleController.UpgradeReportClient(Yichen.Files.Model.DownFileModel)">
+            <summary>
+            更新报告客户端
+            </summary>
+            <param name="infos"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Yichen.Net.Web.Host.Controllers.FileHandleController.UpgradeUpInfos(Yichen.Files.Model.ClientInfoModel)">
+            <summary>
+            获取更新记录信息
+            </summary>
+            <param name="infos"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Yichen.Net.Web.Host.Controllers.FinanceHandleController.CheckGetSerial">
+            <summary>
+            获取财务流水号
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Yichen.Net.Web.Host.Controllers.FinanceHandleController.GetFinanceInfo(Yichen.Comm.Model.commInfoModel{Yichen.Finance.Model.SelectFinanceModel})">
+            <summary>
+            获取收费信息
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Yichen.Net.Web.Host.Controllers.FinanceHandleController.GetCheckInfo(Yichen.Comm.Model.commInfoModel{Yichen.Finance.Model.SelectFinanceCheckModel})">
+            <summary>
+            获取审核账单信息
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Yichen.Net.Web.Host.Controllers.FinanceHandleController.FinancePrice(Yichen.Comm.Model.commInfoModel{Yichen.Finance.Model.priceChangeModel})">
+            <summary>
+            获取修改收费信息
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Yichen.Net.Web.Host.Controllers.FinanceHandleController.BillCheck(Yichen.Comm.Model.commInfoModel{Yichen.Finance.Model.FinanceCheckInfoModel})">
+            <summary>
+            账单审核
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Yichen.Net.Web.Host.Controllers.FinanceHandleController.BillReCheck(Yichen.Comm.Model.commInfoModel{Yichen.Finance.Model.FinanceCheckInfoModel})">
+            <summary>
+            账单反审核
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Yichen.Net.Web.Host.Controllers.FinanceHandleController.FundHandle(Yichen.Comm.Model.commInfoModel{Yichen.Finance.Model.FundInfoModel})">
+            <summary>
+            回款信息处理
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Yichen.Net.Web.Host.Controllers.ItemHandleController.#ctor(Yichen.System.IServices.IUserServices,Yichen.Test.IServices.IItemSaveOldServices,Yichen.Test.IServices.IItemBLSaveServices,Yichen.Files.IServices.IFileHandleServices,Yichen.Test.IServices.IItemHandleServices,Yichen.Test.IServices.ITestHandleServices,Yichen.Test.IRepository.ITestItemInfoRepository)">
+            <summary>
+            构造函数
+            </summary>
+        </member>
+        <member name="M:Yichen.Net.Web.Host.Controllers.ItemHandleController.AddTestInfo(Yichen.Test.Model.table.test_sampleInfo)">
+            <summary>
+            插入检验信息
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Yichen.Net.Web.Host.Controllers.ManageHandleController.#ctor(Yichen.Manage.IServices.ICRMServices,Yichen.Manage.IServices.ISampleHandleServices,Yichen.Manage.IServices.IManageInfoServices)">
+            <summary>
+            构造函数
+            </summary>
+        </member>
+        <member name="M:Yichen.Net.Web.Host.Controllers.ManageHandleController.GetEntrustInfo(Yichen.Manage.Model.ManageInfoModel)">
+            <summary>
+            获取委托样本信息
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Yichen.Net.Web.Host.Controllers.ManageHandleController.GetIHCInfo(Yichen.Manage.Model.ManageInfoModel)">
+            <summary>
+            获取IHC样本信息（免疫组化）
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Yichen.Net.Web.Host.Controllers.ManageHandleController.CRMHandle(Yichen.Comm.Model.commInfoModel{Yichen.Test.Model.TesthandleModel})">
+            <summary>
+            客服信息处理
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Yichen.Net.Web.Host.Controllers.ManageHandleController.CrisisHandle(Yichen.Comm.Model.commInfoModel{Yichen.Test.Model.TesthandleModel})">
+            <summary>
+            危急值信息处理
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Yichen.Net.Web.Host.Controllers.ManageHandleController.SampleHandle(Yichen.Comm.Model.commInfoModel{Yichen.Test.Model.TesthandleModel})">
+            <summary>
+            样本信息特殊处理信息提交
+            </summary>
+            <param name="infos"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Yichen.Net.Web.Host.Controllers.PerHandleController">
+            <summary>
+            前处理操作方法
+            </summary>
+        </member>
+        <member name="M:Yichen.Net.Web.Host.Controllers.PerHandleController.#ctor(Yichen.Per.IServices.IEntryHandleServices)">
+            <summary>
+            构造函数
+            </summary>
+        </member>
+        <member name="M:Yichen.Net.Web.Host.Controllers.PerHandleController.PerBarcodeExist(Yichen.Comm.Model.commInfoModel{System.String})">
+            <summary>
+            查询条码是否存在
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Yichen.Net.Web.Host.Controllers.PerHandleController.GetEntryInfo(Yichen.Per.Model.EntrySelectModel)">
+            <summary>
+            获取录入信息
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Yichen.Net.Web.Host.Controllers.PerHandleController.EntryInfo(Yichen.Per.Model.EntryInfoModel)">
+            <summary>
+            常规样本信息录入
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Yichen.Net.Web.Host.Controllers.PerHandleController.EntryInfoJK(Yichen.Per.Model.JKEntryModel)">
+            <summary>
+            疾控样本信息录入
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Yichen.Net.Web.Host.Controllers.PerHandleController.EntryDelete(Yichen.Per.Model.DeleteInfoModel)">
+            <summary>
+            删除样本信息
+            </summary>
+            <param name="infos"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Yichen.Net.Web.Host.Controllers.QCHandleController.#ctor(Yichen.QC.IServices.IQCHandleServices)">
+            <summary>
+            构造函数
+            </summary>
+        </member>
+        <member name="M:Yichen.Net.Web.Host.Controllers.QCHandleController.QCResultInsert(Yichen.Comm.Model.commInfoModel{Yichen.QC.Model.QCAddModel})">
+            <summary>
+            插入一条指控数据
+            </summary>
+            <param name="info"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Yichen.Net.Web.Host.Controllers.QCHandleController.QCReultSelect(Yichen.Comm.Model.commInfoModel{Yichen.QC.Model.QCSelectValueModel})">
+            <summary>
+            查询质控数据
+            </summary>
+            <param name="info"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Yichen.Net.Web.Host.Controllers.ReportHanldeController.#ctor(Yichen.System.IServices.IUserServices,Yichen.Report.IServices.IReportHandleServices)">
+            <summary>
+            构造函数
+            </summary>
+        </member>
+        <member name="M:Yichen.Net.Web.Host.Controllers.ReportHanldeController.ReportUpload(Yichen.Report.Model.UpLoadReportModel)">
+            <summary>
+            上传报告接口
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Yichen.Net.Web.Host.Controllers.ReportHanldeController.ReportDown(Yichen.Report.Model.GetReportModel)">
+            <summary>
+            下载报告接口
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Yichen.Net.Web.Host.Controllers.ResultHandleController.#ctor(Yichen.System.IServices.IUserServices,Yichen.Test.IServices.ITestHandleServices,Yichen.Test.IServices.IItemSaveOldServices,Yichen.Test.IServices.IItemBLSaveServices,Yichen.Files.IServices.IFileHandleServices)">
+            <summary>
+            构造函数
+            </summary>
+        </member>
+        <member name="M:Yichen.Net.Web.Host.Controllers.ResultHandleController.SaveTest(Yichen.Test.Model.Result.CommResultModel{Yichen.Test.Model.Result.TestInfoModel})">
+            <summary>
+            常规项目结果保存
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Yichen.Net.Web.Host.Controllers.ResultHandleController.SaveMicrobe(Yichen.Test.Model.Result.CommResultModel{Yichen.Test.Model.Result.MicrobeInfoModel})">
+            <summary>
+            微生物结果保存 
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Yichen.Net.Web.Host.Controllers.ResultHandleController.SaveGeneXG(Yichen.Test.Model.Result.CommResultModel{Yichen.Test.Model.Result.GeneInfoModel})">
+            <summary>
+            新冠结果保存
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Yichen.Net.Web.Host.Controllers.ResultHandleController.SaveGene(Yichen.Test.Model.Result.CommResultModel{Yichen.Test.Model.Result.GeneInfoModel})">
+            <summary>
+            公共样本项目结果保存
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Yichen.Net.Web.Host.Controllers.ResultHandleController.BlockHandle(Yichen.Test.Model.Result.CommResultModel{System.Collections.Generic.List{Yichen.Test.Model.Result.BlockInfoModel}})">
+            <summary>
+            蜡块处理方法
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Yichen.Net.Web.Host.Controllers.ResultHandleController.SaveConsultation(Yichen.Test.Model.Result.CommResultModel{Yichen.Test.Model.Result.PathnologyInfoModel})">
+            <summary>
+            会诊结果保存
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Yichen.Net.Web.Host.Controllers.ResultHandleController.SavePathology(Yichen.Test.Model.Result.CommResultModel{Yichen.Test.Model.Result.PathnologyInfoModel})">
+            <summary>
+            病理结果保存
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Yichen.Net.Web.Host.Controllers.ResultHandleController.SaveScreen(Yichen.Test.Model.Result.CommResultModel{Yichen.Test.Model.Result.ScreenInfoModel})">
+            <summary>
+            筛查结果保存
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Yichen.Net.Web.Host.Controllers.ResultHandleController.SaveTCT(Yichen.Test.Model.Result.CommResultModel{Yichen.Test.Model.Result.TCTInfoModel})">
+            <summary>
+            TCT结果保存
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Yichen.Net.Web.Host.Controllers.ResultHandleController.SaveTCTScreen(Yichen.Test.Model.Result.CommResultModel{Yichen.Test.Model.Result.TCTInfoModel})">
+            <summary>
+            TCT筛查
+            </summary>
+            <param name="info"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Yichen.Net.Web.Host.Controllers.SystemController">
+            <summary>
+            用户操作事件
+            </summary>
+        </member>
+        <member name="M:Yichen.Net.Web.Host.Controllers.SystemController.#ctor(Yichen.Net.Auth.HttpContextUser.IHttpContextUser,Yichen.System.IServices.IClientGroupServices,Yichen.System.IServices.IClientInfoServices,Yichen.System.IServices.IGroupTestServices,Yichen.System.IServices.IItemApplyServices,Yichen.System.IServices.IItemFlowServices,Yichen.System.IServices.IItemGroupServices,Yichen.System.IServices.IItemReferenceServices,Yichen.System.IServices.IItemTestServices)">
+            <summary>
+            构造函数 
+            </summary>
+        </member>
+        <member name="M:Yichen.Net.Web.Host.Controllers.SystemController.ClientGroupHandle(Yichen.Comm.Model.BaseModel{Yichen.System.Model.comm_client_group})">
+            <summary>
+            客户专业组信息维护
+            </summary>
+            <param name="entity"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Yichen.Net.Web.Host.Controllers.SystemController.ClientInfoHandle(Yichen.Comm.Model.BaseModel{Yichen.System.Model.comm_client_info})">
+            <summary>
+            客户信息维护
+            </summary>
+            <param name="entity"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Yichen.Net.Web.Host.Controllers.SystemController.GroupTestHandle(Yichen.Comm.Model.BaseModel{Yichen.System.Model.comm_group_test})">
+            <summary>
+            客户专业组信息维护
+            </summary>
+            <param name="entity"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Yichen.Net.Web.Host.Controllers.SystemController.ItemApplyHandle(Yichen.Comm.Model.BaseModel{Yichen.System.Model.comm_item_apply})">
+            <summary>
+            项目组套信息维护
+            </summary>
+            <param name="entity"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Yichen.Net.Web.Host.Controllers.SystemController.ItemFlowHandle(Yichen.Comm.Model.BaseModel{Yichen.Flow.Model.comm_item_flow})">
+            <summary>
+            项目组合流程信息维护
+            </summary>
+            <param name="entity"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Yichen.Net.Web.Host.Controllers.SystemController.ItemGroupHandle(Yichen.Comm.Model.BaseModel{Yichen.System.Model.comm_item_group})">
+            <summary>
+            项目组合信息维护
+            </summary>
+            <param name="entity"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Yichen.Net.Web.Host.Controllers.SystemController.ItemTestHandle(Yichen.Comm.Model.BaseModel{Yichen.System.Model.comm_item_test})">
+            <summary>
+            项目组合信息维护
+            </summary>
+            <param name="entity"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Yichen.Net.Web.Host.Controllers.SystemController.ItemReferenceHandle(Yichen.Comm.Model.BaseModel{Yichen.System.Model.comm_item_reference})">
+            <summary>
+            项目子项目信息维护
+            </summary>
+            <param name="entity"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Yichen.Net.Web.Host.Controllers.TestHandleController">
+            <summary>
+            检验中操作方法
+            </summary>
+        </member>
+        <member name="M:Yichen.Net.Web.Host.Controllers.TestHandleController.#ctor(Yichen.System.IServices.IUserServices,Yichen.Test.IServices.ITestHandleServices,Yichen.Test.IServices.IItemSaveOldServices,Yichen.Test.IServices.IItemBLSaveServices,Yichen.Files.IServices.IFileHandleServices)">
+            <summary>
+            构造函数
+            </summary>
+        </member>
+        <member name="M:Yichen.Net.Web.Host.Controllers.TestHandleController.GetTestInfo(Yichen.Test.Model.GetTestInfoModel)">
+            <summary>
+            获取检验信息
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Yichen.Net.Web.Host.Controllers.TestHandleController.GetItemInfo(Yichen.Test.Model.GetItemInfoModel)">
+            <summary>
+            获取样本项目信息
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Yichen.Net.Web.Host.Controllers.TestHandleController.GetMicrobeInfo(Yichen.Comm.Model.commInfoModel{Yichen.Test.Model.Result.GetMicrobeItemModel})">
+            <summary>
+            获取微生物结果
+            </summary>
+            <param name="info"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Yichen.Net.Web.Host.Controllers.TestHandleController.GetTestImg(Yichen.Comm.Model.commInfoModel{Yichen.Test.Model.TestDownModel})">
+            <summary>
+            获取结果图片上传信息
+            </summary>
+            <param name="info"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Yichen.Net.Web.Host.Controllers.TestHandleController.GetReferenceRefresh(Yichen.Comm.Model.commInfoModel{Yichen.Test.Model.TestWorkModel})">
+            <summary>
+            刷新样本项目的参考值信息
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:Yichen.Net.Web.Host.Controllers.UserController">
+            <summary>
+            用户操作事件
+            </summary>
+        </member>
+        <member name="M:Yichen.Net.Web.Host.Controllers.UserController.#ctor(Yichen.System.IServices.IUserServices,Yichen.Comm.IServices.IToolsServices)">
+            <summary>
+            构造函数
+            </summary>
+        </member>
+        <member name="M:Yichen.Net.Web.Host.Controllers.UserController.Logins(Yichen.System.Model.LoginInfo,System.Boolean)">
+            <summary>
+            用户登录
+            </summary>
+            <param name="entity"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Yichen.Net.Web.Host.Controllers.UserController.LogOut">
+            <summary>
+            注销登录
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Yichen.Net.Web.Host.Controllers.UserController.RefreshToken">
+            <summary>
+            用户登录
+            </summary>
+            <param name="entity"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Yichen.Net.Web.Host.Controllers.UserController.GetUserInfo">
+            <summary>
+            获取用户信息
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Yichen.Net.Web.Host.Controllers.UserController.ChangePassword(Yichen.Net.Model.FromBody.EditPwdPost)">
+            <summary>
+            修改用户密码
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Yichen.Net.Web.Host.Controllers.UserController.GetVierificationCode">
+            <summary>
+            2022.11.02增加登陆验证码
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:Yichen.Net.Web.Host.Program">
+            <summary>
+            启动类
+            </summary>
+        </member>
+        <member name="M:Yichen.Net.Web.Host.Program.Main(System.String[])">
+            <summary>
+                启动配置
+            </summary>
+            <param name="args"></param>
+        </member>
+        <member name="M:Yichen.Net.Web.Host.Program.CreateHostBuilder(System.String[])">
+            <summary>
+                创建启动支撑
+            </summary>
+            <param name="args"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Yichen.Net.Web.Host.Startup">
+            <summary>
+            启动配置
+            </summary>
+        </member>
+        <member name="M:Yichen.Net.Web.Host.Startup.#ctor(Microsoft.Extensions.Configuration.IConfiguration,Microsoft.AspNetCore.Hosting.IWebHostEnvironment)">
+            <summary>
+            构造函数
+            </summary>
+            <param name="configuration"></param>
+            <param name="env"></param>
+        </member>
+        <member name="P:Yichen.Net.Web.Host.Startup.Configuration">
+            <summary>
+            配置属性
+            </summary>
+        </member>
+        <member name="P:Yichen.Net.Web.Host.Startup.Env">
+            <summary>
+            web环境
+            </summary>
+        </member>
+        <member name="M:Yichen.Net.Web.Host.Startup.ConfigureServices(Microsoft.Extensions.DependencyInjection.IServiceCollection)">
+            This method gets called by the runtime. Use this method to add services to the container.
+        </member>
+        <member name="M:Yichen.Net.Web.Host.Startup.ConfigureContainer(Autofac.ContainerBuilder)">
+            <summary>
+                Autofac规则配置
+            </summary>
+            <param name="builder"></param>
+        </member>
+        <member name="M:Yichen.Net.Web.Host.Startup.Configure(Microsoft.AspNetCore.Builder.IApplicationBuilder,Microsoft.AspNetCore.Hosting.IWebHostEnvironment)">
+            <summary>
+             This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
+            </summary>
+            <param name="app"></param>
+            <param name="env"></param>
+        </member>
+        <member name="T:Yichen.Net.Web.Admin.Controllers.StoresController">
+             <summary>
+             
+            </summary>
+        </member>
+        <member name="M:Yichen.Net.Web.Admin.Controllers.StoresController.#ctor(Microsoft.AspNetCore.Hosting.IWebHostEnvironment,Yichen.Stores.IServices.Isw_storesServices)">
+             <summary>
+             构造函数
+            </summary>
+        </member>
+        <member name="M:Yichen.Net.Web.Admin.Controllers.StoresController.GetShelfSerial">
+            <summary>
+            获取财务流水号
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Yichen.Net.Web.Admin.Controllers.StoresController.RecordHandle(Yichen.Comm.Model.commInfoModel{System.String})">
+            <summary>
+            存储标本处理
+            </summary>
+            <returns></returns>
+            state=(1正常2已处理3已过期4其他)
+        </member>
+    </members>
+</doc>
